@@ -1,13 +1,120 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #F5E0BF;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 60px;
+  justify-content: space-between;
+  padding-left: 30px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon-1,
+.icon-2,
+.icon-3 {
+  margin-right: 50px; /* Ajuste o valor de margem desejado */
+}
+
+
+.icons p {
+  padding-left: 20px;
+}
+
+.content {
+  display: flex;
+}
+
+.intro {
+  margin: 20px;
+}
+
+.intro .title {
+  margin-top: 180px;
+  margin-bottom: 30px;
+}
+
+.intro .description {
+  font-size: 28px;
+  width: 50%;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+
+.img {
+  display: flex;
+  background-color: red;
+  border: solid 1px #000;
+  border-radius: 10px;
+  width: 80vh;
+  height: 76vh;
+  margin-bottom: 20px; 
+  position: relative; 
+}
+
+.buttonStart {
+  position: absolute;
+  bottom: 0; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 100%;
+  text-align: center; 
+}
+
+.buttonStart button {
+  width: 43vh;
+  height: 8vh;
+  border: none;
+  border-radius: 20px;
+  background-color: #4EC74B;
+  margin-bottom: 40px;
+}
+
+.buttonStart button a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.buttonStart button:hover {
+  background-color: #10af05;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  height: 43px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
+
+
+.error{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bolder;
 }
