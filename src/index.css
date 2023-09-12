@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
 .icon-1,
 .icon-2,
 .icon-3 {
-  margin-right: 50px; /* Ajuste o valor de margem desejado */
+  margin-right: 50px;
 }
 
 
@@ -38,7 +39,7 @@ body {
 }
 
 .intro {
-  margin: 20px;
+  margin-left: 100px;
 }
 
 .intro .title {
@@ -54,45 +55,85 @@ body {
 .img-container {
   display: flex;
   align-items: center;
-  margin: 30px;
+  margin-top: 10px;
+  width: 100%;
 }
 
-.img {
+.imgIntro {
   display: flex;
-  background-color: red;
-  border: solid 1px #000;
   border-radius: 10px;
-  width: 80vh;
-  height: 76vh;
-  margin-bottom: 20px; 
+  height: 80vh;
+  margin-bottom: 10px; 
   position: relative; 
 }
 
-.buttonStart {
-  position: absolute;
-  bottom: 0; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  width: 100%;
-  text-align: center; 
+.FaPlayCircle{
+  padding-right: 5px;
 }
 
-.buttonStart button {
-  width: 43vh;
-  height: 8vh;
+.buttonStart {
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  background: linear-gradient(90deg, #4EC74B 0%, #028100 100%);
   border: none;
   border-radius: 20px;
-  background-color: #4EC74B;
-  margin-bottom: 40px;
-}
-
-.buttonStart button a{
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
   text-decoration: none;
-  color: #fff;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43vh;
+  height: 8vh;
+  margin-bottom: 40px;
+  transition: transform 0.1s;
 }
 
-.buttonStart button:hover {
+.buttonStart .button:hover {
+  font-weight: bolder;
   background-color: #10af05;
+  transform: scale(1.1);
+}
+
+
+.button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #10af05;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 2s infinite;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
 }
 
 footer {
@@ -107,8 +148,6 @@ footer {
   color: #000;
   text-align: center;
 }
-
-
 
 .error{
   height: 100vh;

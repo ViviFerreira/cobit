@@ -2,7 +2,9 @@ import React from "react";
 
 function Fase() {
   return (
-   <p>Fase</p>
+   <div>
+    <p>sdasdasd</p>
+   </div>
   );
 }
 export default Fase;
