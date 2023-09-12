@@ -1,10 +1,9 @@
-import React from "react";
+
 
 function Fase() {
   return (
-   <div>
-    <p>sdasdasd</p>
-   </div>
+   <div className="container">
+    </div>
   );
 }
 export default Fase;

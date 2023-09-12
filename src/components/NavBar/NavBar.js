@@ -1,5 +1,5 @@
 import React from "react";
-
+import './styles.css';
 
 import { FaMap } from "react-icons/fa6";
 import { FaTrophy } from "react-icons/fa6";

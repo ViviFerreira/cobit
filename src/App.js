@@ -1,10 +1,8 @@
-import  NavBar  from "./components/NavBar.js"
-import  Footer  from "./components/Footer.js"
+import  NavBar  from "./components/NavBar/NavBar"
+import  Footer  from "./components/Footer/Footer"
+import  ButtonStart  from "./components/ButtonStart/ButtonStart"
 import imgIntro from "./assets/img/imgIntro.png"
-import { Link } from "react-router-dom";
 
-// Icones usados
-import { FaPlayCircle } from "react-icons/fa";
 
 function App() {
   return (
@@ -18,15 +16,7 @@ function App() {
             <div className='img-container'>
               <div className='imgIntro'>
                 <img src={imgIntro} alt="Opss" />
-                <div className='buttonStart'>
-                  <Link 
-                  to="/pageError"
-                  className="button"
-                  activeClassName="is-active">
-                    <FaPlayCircle className="FaPlayCircle" size={30} color="#fff"/>
-                    Start
-                  </Link>
-                </div>
+                <ButtonStart/>
               </div>
             </div>
           </div>

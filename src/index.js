@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Home from './pages/Home/Home';
 import  Fase  from "./pages/Fase/Fase";
-import  PageError  from "./components/PageError";
+import  PageError  from "./components/PageError/PageError";
 
 const router = createBrowserRouter([
   {

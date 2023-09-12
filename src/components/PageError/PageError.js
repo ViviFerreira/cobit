@@ -1,6 +1,5 @@
 import React from "react";
-import '../../src/';
-
+import './styles.css';
 
 function PageError() {
   return (
