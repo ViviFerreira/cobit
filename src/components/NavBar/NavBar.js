@@ -9,8 +9,8 @@ import { FaCircleUser } from "react-icons/fa6";
 function NavBar() {
   return (
     <div className="navBar">
-        <div className='logo'>
-          <FaCircleUser size={40} color="#000" />
+        <div className='navTitle'>
+          <h1>COBIT 2019</h1>
         </div>
       <div className='icons'>
         <div className='icon-1'> 

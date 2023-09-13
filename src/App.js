@@ -10,8 +10,11 @@ function App() {
       <NavBar/>
           <div className='content'>
             <div className='intro'>
-              <h1 className='title'>Lorem ipsum</h1>
-              <p className='description'>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+              <div>
+                <h1 className="title">Aprenda sobre</h1>
+                <h2 className="subTitle">COBIT 2019</h2>
+              </div>
+              <p className='description'>Nossa plataforma oferece uma apresentação dinâmica dos conceitos e fundamentos do COBIT 2019</p>
             </div>
             <div className='img-container'>
               <div className='imgIntro'>
