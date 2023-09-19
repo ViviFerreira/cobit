@@ -1,9 +1,10 @@
-
+import './styles.css';
 
 function Fase() {
   return (
-   <div className="container">
-    </div>
+   <div className="teste">
+    <>a</>
+   </div>
   );
 }
 export default Fase;

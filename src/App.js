@@ -2,13 +2,14 @@ import  NavBar  from "./components/NavBar/NavBar"
 import  Footer  from "./components/Footer/Footer"
 import  ButtonStart  from "./components/ButtonStart/ButtonStart"
 import imgIntro from "./assets/img/imgIntro.png"
-
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <div className="container">
       <NavBar/>
-          <div className='content'>
+      <Outlet/>
+      <div className='content'>
             <div className='intro'>
               <div>
                 <h1 className="title">Aprenda sobre</h1>
