@@ -4,7 +4,6 @@ import './styles.css';
 import { FaMap } from "react-icons/fa6";
 import { FaTrophy } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa6";
-import { FaCircleUser } from "react-icons/fa6";
 
 function NavBar() {
   return (
