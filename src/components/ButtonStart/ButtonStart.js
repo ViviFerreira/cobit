@@ -9,7 +9,7 @@ import { FaPlayCircle } from "react-icons/fa";
 function ButtonStart() {
     return(
     <div className='buttonStart'>
-        <Link to="/Fase"
+        <Link to="/Maps"
         className="button"
         activeClassName="is-active">
             <FaPlayCircle className="FaPlayCircle" size={30} color="#fff"/>

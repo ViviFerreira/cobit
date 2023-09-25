@@ -36,6 +36,7 @@
   
   .buttonStart .button:hover {
     background-color: #10af05;
+    color:#fff;
     transform: scale(1.1);
   }
   
