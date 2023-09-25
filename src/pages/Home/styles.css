@@ -1,5 +1,12 @@
+
+
+.container{
+	display: flex;
+}
+
 .intro {
 	margin-left: 100px;
+	width: 60%;
 }
 
 .intro .title {
@@ -25,7 +32,7 @@
 	display: flex;
 	align-items: center;
 	margin-top: 10px;
-	width: 58%;
+	width: 40%;
 }
 
 .imgIntro {
@@ -35,3 +42,5 @@
 	margin-bottom: 10px;
 	position: relative;
 }
+
+

@@ -1,6 +1,8 @@
 import NavBar from './NavBar';
 import Main from './Main';
 import Footer from './Footer';
+import './styles.css';
+
 
 function Layout({ children }) {
 	return (
