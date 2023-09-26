@@ -5,7 +5,7 @@ import { FaMap } from 'react-icons/fa6';
 import { FaTrophy } from 'react-icons/fa6';
 import { FaStar } from 'react-icons/fa6';
 
-function NavBar() {
+function Header() {
 	return (
 		<header className='navBar'>
 			<div className='navTitle'>
@@ -27,4 +27,4 @@ function NavBar() {
 		</header>
 	);
 }
-export default NavBar;
+export default Header;

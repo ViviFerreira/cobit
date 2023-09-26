@@ -2,8 +2,10 @@ body {
 	background-color: #fff;
 }
 
-.container {
+.container-home {
 	display: flex;
+	height: 100%;
+	align-items: center;
 	margin-left: 10vw;
 	margin-right: 8vw;
 }
@@ -15,14 +17,16 @@ body {
 	background-color: rgba(198, 54, 114, 0.1);
 	position: absolute;
 	left: -10rem;
-	margin-top: 2vh;
 }
 .intro {
 	width: 60%;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .intro .title {
-	margin-top: 120px;
 	font-size: 3rem;
 	font-weight: 100;
 }
@@ -35,17 +39,20 @@ body {
 	font-size: 2.5rem;
 }
 
+.intro .subTitle p {
+	display: inline;
+	color: var(--color-blue);
+}
+
 .ano {
 	font-size: 1.5rem;
 	color: var(--color-red);
 }
 
 .intro .description {
-	margin-top: 50px;
 	font-size: 1.4rem;
-	width: 60%;
+	width: 80%;
 	text-align: left;
-	font-weight: bold;
 }
 
 .img-container {
@@ -60,4 +67,7 @@ body {
 	height: 80vh;
 	margin-bottom: 20px;
 	position: relative;
+}
+
+@media screen and (max-width: 768px) {
 }

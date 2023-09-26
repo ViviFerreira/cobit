@@ -7,13 +7,15 @@ import './styles.css';
 function Home() {
 	return (
 		<Layout>
-			<div className='container'>
+			<div className='container-home'>
 				<div className='circulo'></div>
 				<div className='intro'>
 					<div>
 						<h1 className='title'>Aprenda sobre</h1>
 						<h2 className='subTitle'>
-							C<span className='logo-cobit-home'>O</span>BIT
+							<p>
+								C<span className='logo-cobit-home'>O</span>BIT
+							</p>
 							<span className='ano'>2019</span>
 						</h2>
 					</div>

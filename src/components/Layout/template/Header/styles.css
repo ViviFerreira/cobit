@@ -31,3 +31,16 @@
 .icons p {
 	padding-left: 30px;
 }
+
+@media screen and (max-width: 768px) {
+	.navTitle {
+		display: none;
+	}
+
+	.icons {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+	}
+}
