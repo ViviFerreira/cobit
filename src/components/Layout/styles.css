@@ -1,11 +1,15 @@
 container {
 	display: grid;
-	grid-template-rows: auto auto auto;
-	grid-template-areas: 'navbar' 'main' 'footer';
-	overflow: hidden;
+	grid-template-areas:
+		'header'
+		'main'
+		'footer';
+
+	grid-template-rows: 8vh 90vh 8vh;
+	min-height: 100vh;
 
 	header {
-		grid-area: navbar;
+		grid-area: header;
 	}
 
 	main {
@@ -14,6 +18,5 @@ container {
 
 	footer {
 		grid-area: footer;
-		
 	}
 }

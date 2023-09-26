@@ -1,0 +1,30 @@
+import React from 'react';
+import './styles.css';
+
+import { FaMap } from 'react-icons/fa6';
+import { FaTrophy } from 'react-icons/fa6';
+import { FaStar } from 'react-icons/fa6';
+
+function NavBar() {
+	return (
+		<header className='navBar'>
+			<div className='navTitle'>
+				<h1>
+					C<span className='logo-cobit'>O</span>BITDynamiX
+				</h1>
+			</div>
+			<div className='icons'>
+				<div className='icon-1'>
+					<FaMap size={30} color='#FFFFFF' />
+				</div>
+				<div className='icon-2'>
+					<FaTrophy size={30} color='#FFFFFF' />
+				</div>
+				<div className='icon-3'>
+					<FaStar size={30} color='#FFFFFF' />
+				</div>
+			</div>
+		</header>
+	);
+}
+export default NavBar;

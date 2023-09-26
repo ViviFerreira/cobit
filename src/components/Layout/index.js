@@ -1,8 +1,7 @@
-import NavBar from './NavBar';
-import Main from './Main';
-import Footer from './Footer';
+import NavBar from './template/Header';
+import Main from './template/Main';
+import Footer from './template/Footer';
 import './styles.css';
-
 
 function Layout({ children }) {
 	return (

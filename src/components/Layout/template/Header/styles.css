@@ -1,0 +1,33 @@
+.navBar {
+	display: flex;
+	align-items: center;
+	background-color: var(--color-blue);
+	color: var(--color-white);
+	justify-content: space-between;
+	padding-left: 30px;
+	width: 100%;
+}
+
+.logo-cobit {
+	color: var(--color-logo);
+}
+
+.navTitle {
+	font-family: var(--font-inter);
+	font-size: 12px;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+}
+
+.icon-1,
+.icon-2,
+.icon-3 {
+	margin-right: 50px;
+}
+
+.icons p {
+	padding-left: 30px;
+}
