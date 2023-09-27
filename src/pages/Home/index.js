@@ -8,7 +8,7 @@ function Home() {
 	return (
 		<Layout>
 			<div className='container-home'>
-				<div className='circulo'></div>
+				<div className='circuloHome'></div>
 				<div className='intro'>
 					<div>
 						<h1 className='title'>Aprenda sobre</h1>
