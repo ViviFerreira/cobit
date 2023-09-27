@@ -1,74 +1,76 @@
-
-.container{
-    width: 100%;
-    height: 100%;
+.container {
+	width: 100%;
+	height: 100%;
 }
 
-.contentModulo1_1{
-    display: flex;
-    align-items: center;
+.contentModulo1_1 {
+	display: flex;
+	align-items: center;
 }
 
-.titleModulo1_1{
-    display: flex;
-    margin-top: 10px;
-    justify-content: center;
-    
+.titleModulo1_1 {
+	display: flex;
+	margin-top: 10px;
+	justify-content: center;
 }
 
-.ListBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
-    flex-direction: column;
-    margin-top: 5%;
-    margin-bottom: 5%;
+.ListBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 33%;
+	flex-direction: column;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 .item-1,
 .item-2,
 .item-3,
 .item-4,
-.item-5{
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 18rem;
-    height: 35px;
-    margin-top: 20px;
-    border-radius: 10px;
-    background-color: #FF745C;
+.item-5 {
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 18rem;
+	height: 35px;
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: #ff745c;
 }
 
-.imgModulo1_1{
-    display: flex;
-    justify-content: center;
-    width: 33%;
-    margin-top: 20px;
+.imgModulo1_1 {
+	display: flex;
+	justify-content: center;
+	width: 33%;
+	margin-top: 20px;
 }
 
-.cardsmodulo1_1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
-    flex-direction: column;
-    margin-top: 5%;
-    margin-bottom: 5%;
+.cardsmodulo1_1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 33%;
+	flex-direction: column;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 .card1modulo1_1,
-.card2modulo1_1{
-    display: flex;
-    justify-content: center !important;
-    align-items: center;
-    height: 8rem;
-    color: #FFF;
-    background-color: #FF745C;
-    width: 22rem;
-    margin-top: 20px;
-    border-radius: 10px;
+.card2modulo1_1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 8rem;
+	color: #fff;
+	background-color: #ff745c;
+	width: 22rem;
+	margin-top: 20px;
+	border-radius: 10px;
 }
 
+.card1modulo1_1 p,
+.card2modulo1_1 p {
+	width: 80%;
+}
