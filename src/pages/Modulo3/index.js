@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../components/Layout';
-import imgModulo1 from '../../assets/img/imgModulo1.png'
+import imgModulo3 from '../../assets/img/imgModulo3.png'
 import { Link } from 'react-router-dom';
 import PaginationUP from '../../components/Pagination/PaginationUP'
 import PaginationDown from '../../components/Pagination/PaginationDown'
@@ -9,7 +9,7 @@ import './styles.css';
 import { motion } from 'framer-motion';
 
 
-function Modulo1() {
+function Modulo3() {
 	return (
 		<Layout>
             <motion.div className='containerMap'
@@ -20,22 +20,22 @@ function Modulo1() {
                 <div className='circulo_1'></div>
                 <div className='circulo_2'></div>
                 <div className='circulo_3'></div>
-                <div className='descriptionModulo1'>
-                    <h1 className='titleModulo1'>Você está na <strong className='bolder'>MÓDULO 1</strong></h1>
-                    <p className='subtitleModulo1'>Introdução de governança e COBIT 2019</p>
+                <div className='descriptionModulo3'>
+                    <h1 className='titleModulo3'>Você está na <strong className='bolder'>MÓDULO 3</strong></h1>
+                    <p className='subtitleModulo3'>Objetivos de Governança e gestão</p>
                 </div>
                 <div className='introImg'>
-                    <img className='introModulo1' src={imgModulo1}></img>
+                    <img className='imgModulo3' src={imgModulo3}></img>
                 </div>
 
                 <Link to='/Maps'>
                     <PaginationUP/>
                 </Link>
-                <Link to='/Modulo1_1'>
+                <Link to='*'>
                     <PaginationDown/>
                 </Link>
             </motion.div>
 		</Layout>
 	);
 }
-export default Modulo1;
+export default Modulo3;
