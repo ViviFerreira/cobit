@@ -4,10 +4,16 @@ import ButtonStart from '../../components/ButtonStart';
 import imgIntro from '../../assets/img/imgIntro.png';
 import './styles.css';
 
+import { motion } from 'framer-motion';
+
 function Home() {
 	return (
 		<Layout>
-			<div className='container-home'>
+			<motion.div className='container-home'
+				initial={{opacity: 0}}
+				animate={{opacity: 1}}
+				exit={{opacity: 0}}
+			>	
 				<div className='circuloHome'></div>
 				<div className='intro'>
 					<div>
@@ -30,7 +36,7 @@ function Home() {
 						<ButtonStart />
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</Layout>
 	);
 }

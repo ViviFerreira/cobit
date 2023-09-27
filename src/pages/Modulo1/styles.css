@@ -29,6 +29,12 @@
     margin-top: 15rem;
 }
 
+.containerMap{
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
 .descriptionModulo1{
     margin-left: 3rem;
     
