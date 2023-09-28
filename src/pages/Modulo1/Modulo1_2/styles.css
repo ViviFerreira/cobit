@@ -1,0 +1,42 @@
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.descriptionModulo1_2{
+    width: 40%;
+    margin-top: 4rem;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+
+.listCardModulo1_2{
+    display: flex;
+    margin: 20px 20px auto;
+}
+
+
+.card1Modulo1_2,
+.card2Modulo1_2,
+.card3Modulo1_2,
+.card4Modulo1_2{
+    border: none;
+    background-color: #ff745c;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 8rem;
+    margin: 0px 20px auto;
+    text-decoration: none;
+}
+
+.containerSetaModulo1_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

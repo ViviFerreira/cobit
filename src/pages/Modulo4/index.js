@@ -28,12 +28,8 @@ function Modulo4() {
                     <img className='imgModulo4' src={imgModulo4}></img>
                 </div>
 
-                <Link to='/Maps'>
-                    <PaginationUP/>
-                </Link>
-                <Link to='*'>
-                    <PaginationDown/>
-                </Link>
+                <PaginationUP link='/Maps' />
+				<PaginationDown link='*' />
             </motion.div>
 		</Layout>
 	);
