@@ -12,6 +12,7 @@ import Modulo1_5 from '../pages/Modulo1/Modulo1_5';
 import Modulo1_6 from '../pages/Modulo1/modulo1_6';
 import Modulo1_7 from '../pages/Modulo1/Modulo1_7';
 import Questionario1_1 from '../pages/Questionario1/Questionario1_1';
+import Questionario1_2 from '../pages/Questionario1/Questionario1_2';
 import Modulo2 from '../pages/Modulo2';
 import Modulo3 from '../pages/Modulo3';
 import Modulo4 from '../pages/Modulo4';
@@ -37,6 +38,7 @@ export default () => {
         <Route path='/modulo1_6' element={<Modulo1_6 />} />
         <Route path='/modulo1_7' element={<Modulo1_7 />} />
         <Route path='/Questionario1_1' element={<Questionario1_1 />} />
+        <Route path='/Questionario1_2' element={<Questionario1_2 />} />
         <Route path='/modulo2' element={<Modulo2 />} />
         <Route path='/modulo3' element={<Modulo3 />} />
         <Route path='/modulo4' element={<Modulo4 />} />

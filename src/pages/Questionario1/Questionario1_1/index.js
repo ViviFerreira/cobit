@@ -7,17 +7,15 @@ import PaginationDown from '../../../components/Pagination/PaginationDown'
 import './styles.css';
 
 
-
-
 function Questionario1_1() {
 	return (
 		<Layout>
             <div className='container'>
                 <div>
-                    <div className='titleQuest1_1'>
+                    <div className='titleQuest'>
                         <h1>QUESTIONÁRIO</h1>   
                     </div>
-                    <div className='descriptionQuest1_1'>
+                    <div className='descriptionQuest'>
                         <h1>Parabéns, Você concluiu o <span>MÓDULO 1</span></h1>
                     </div>
                 </div>
@@ -30,7 +28,7 @@ function Questionario1_1() {
                     </div>
                 </div>
                 <PaginationUP link='/Modulo1_7' />
-				<PaginationDown link='/*' />
+				<PaginationDown link='/Questionario1_2' />
             </div>
 		</Layout>
 	);
