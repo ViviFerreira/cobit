@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../../../components/Layout';
+import TitleModulo1_6 from '../../../components/TitleModulo1_6';
 import PaginationUP from '../../../components/Pagination/PaginationUP';
 import PaginationDown from '../../../components/Pagination/PaginationDown';
 import imgModulo1_1 from '../../../assets/img/imgModulo1_1.png';
@@ -9,9 +10,7 @@ function Modulo1_1() {
 	return (
 		<Layout>
 			<div className='container'>
-				<div className='titleModulo1_1'>
-					<h1>O que é GOVERNANÇA DE TI ?</h1>
-				</div>
+				<TitleModulo1_6/>
 				<div className='contentModulo1_1'>
 					<div className='ListBox'>
 						<p>Um conjunto de:</p>
@@ -46,11 +45,11 @@ function Modulo1_1() {
 					</div>
 				</div>
 				<div>
-					<PaginationUP link='modulo1' />
-					<PaginationDown link='maps' />
+					<PaginationUP link='/Modulo1' />
+					<PaginationDown link='/Modulo1_2' />
 				</div>
 			</div>
 		</Layout>
-	);
+	);	
 }
 export default Modulo1_1;
