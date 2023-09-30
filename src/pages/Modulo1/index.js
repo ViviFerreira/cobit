@@ -1,37 +1,17 @@
 import React from 'react';
 import Layout from '../../components/Layout';
-import imgModulo1 from '../../assets/img/imgModulo1.png'
-import { Link } from 'react-router-dom';
-import PaginationUP from '../../components/Pagination/PaginationUP'
-import PaginationDown from '../../components/Pagination/PaginationDown'
-import './styles.css';
-
-import { motion } from 'framer-motion';
-
+import Modulo from '../../components/Modulo';
+import imgMudulo1 from '../../assets/img/imgModulo1.png';
 
 function Modulo1() {
 	return (
-		<Layout>
-            <motion.div className='containerMap'
-            initial={{opacity: 0}}
-			animate={{opacity: 1}}
-			exit={{opacity: 0}}
-            >
-                <div className='circulo_1'></div>
-                <div className='circulo_2'></div>
-                <div className='circulo_3'></div>
-                <div className='descriptionModulo1'>
-                    <h1 className='titleModulo1'>Você está na <strong className='bolder'>MÓDULO 1</strong></h1>
-                    <p className='subtitleModulo1'>Introdução de governança e COBIT 2019</p>
-                </div>
-                <div className='introImg'>
-                    <img className='introModulo1' src={imgModulo1}></img>
-                </div>
-
-                <PaginationUP link='/Maps' />
-				<PaginationDown link='/Modulo1_1' />
-            </motion.div>
-		</Layout>
+		<Modulo
+			number='1'
+			subtitle='Princípios do COBIT 2019'
+			imgMudulo={imgMudulo1}
+			up='/Maps'
+			down='*'
+		/>
 	);
 }
 export default Modulo1;

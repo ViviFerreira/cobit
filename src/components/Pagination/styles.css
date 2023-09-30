@@ -1,0 +1,11 @@
+.paginationUP {
+	position: absolute;
+	right: 52%;
+	bottom: 3rem;
+}
+
+.paginationDown {
+	position: absolute;
+	right: 49.5%;
+	bottom: 3rem;
+}
