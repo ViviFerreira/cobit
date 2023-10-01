@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../../components/Layout';
-import TitleModulo1_6 from '../../../components/TitleModulo1_6';
+import TitleModulo from '../../../components/TitleModulo';
 import Pagination from '../../../components/Pagination';
 import setaModulo1_2 from '../../../assets/img/setaModulo1_2.png';
 
@@ -12,7 +12,7 @@ function Modulo1_2() {
 		<Layout>
 			<div className='container'>
 				<div>
-					<TitleModulo1_6 />
+					<TitleModulo>Sobre o CICLO DE GOVERNANÇA DE TI</TitleModulo>
 					<div>
 						<p className='descriptionModulo1_2'>
 							A governança de TI segue um ciclo essencial denominado "Ciclo de
@@ -63,7 +63,7 @@ function Modulo1_2() {
 					</div>
 				</div>
 				<div>
-					<Pagination up='/Modulo1_1' dowm='/Modulo1_7' />
+					<Pagination up='/Modulo1_1' down='/Modulo1_7' />
 				</div>
 			</div>
 		</Layout>

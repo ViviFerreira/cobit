@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../../../components/Layout';
 import imgModulo1_7 from '../../../assets/img/imgModulo1_7.png';
 import Pagination from '../../../components/Pagination';
+import TitleModulo from '../../../components/TitleModulo';
 
 import './styles.css';
 
@@ -9,11 +10,7 @@ function Modulo1_7() {
 	return (
 		<Layout>
 			<div className='container'>
-				<div className='titleModulo1_7'>
-					<h1>
-						O que é <span>COBIT 2019?</span>
-					</h1>
-				</div>
+				<TitleModulo>O que é COBIT 2019?</TitleModulo>
 				<div className='contentTextImgModule1_7'>
 					<div className='textExpModule1_7'>
 						<p>
@@ -45,7 +42,7 @@ function Modulo1_7() {
 					</div>
 				</div>
 				<div>
-					<Pagination up='/Modulo1_2' dowm='/Questionario1_1' />
+					<Pagination up='/Modulo1_2' down='/Questionario1_1' />
 				</div>
 			</div>
 		</Layout>

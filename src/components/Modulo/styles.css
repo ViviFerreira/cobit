@@ -4,7 +4,7 @@
 	border-radius: 100%;
 	background-color: rgba(198, 54, 114, 0.1);
 	position: absolute;
-	top: 28rem;
+	top: 30vw;
 	left: -5rem;
 }
 .circulo_2 {
@@ -18,12 +18,12 @@
 }
 
 .circulo_3 {
-	width: 20vw;
-	height: 20vw;
+	width: 12vw;
+	height: 12vw;
 	border-radius: 100%;
 	background-color: rgba(198, 54, 114, 0.1);
 	position: absolute;
-	right: -10rem;
+	right: -5rem;
 	top: 1.5rem;
 }
 
@@ -34,6 +34,7 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	box-sizing: border-box;
 }
 
 .descriptionModulo {
@@ -46,18 +47,57 @@
 .bolder {
 	width: 5rem;
 	padding: 1rem;
-	font-size: max(30px, 2rem);
+	font-size: max(18px, 2vw);
 	font-weight: bolder;
 	background-color: var(--color-blue);
 	color: var(--color-white);
 }
 
+.titleModulo {
+	font-size: max(25px, 2vw);
+}
+
 .subtitleModulo {
-	font-size: 25px;
-	width: 80%;
+	font-size: max(22px, 1.6vw);
+	width: 100%;
 	font-weight: 800;
 }
 
 .imgModulo {
-	width: 40%;
+	width: 38%;
+}
+
+@media screen and (max-width: 768px) {
+	.containerModulo {
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
+		height: 70vh;
+	}
+
+	.imgModulo {
+		width: 100%;
+	}
+
+	.descriptionModulo {
+		height: 15vh;
+		width: 100%;
+	}
+
+	.circulo_2 {
+		width: 20vw;
+		height: 20vw;
+		border-radius: 100%;
+		background-color: rgba(198, 54, 114, 0.1);
+		position: absolute;
+		left: 22rem;
+		top: 20rem;
+	}
+
+	.circulo_3 {
+		right: -10rem;
+		top: 40rem;
+		width: 70vw;
+		height: 70vw;
+	}
 }

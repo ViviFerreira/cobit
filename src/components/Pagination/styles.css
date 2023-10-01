@@ -1,11 +1,22 @@
-.paginationUP {
+.container-pagination {
+	width: 100vw;
+	height: 5rem;
 	position: absolute;
-	right: 52%;
-	bottom: 3rem;
+	bottom: 1rem;
+	display: flex;
+	justify-content: center;
 }
 
-.paginationDown {
-	position: absolute;
-	right: 49.5%;
-	bottom: 3rem;
+.buttons {
+	width: 6%;
+	display: flex;
+	justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+	.buttons {
+		width: 20%;
+		display: flex;
+		justify-content: space-around;
+	}
 }

@@ -1,0 +1,48 @@
+.container {
+	width: 100%;
+	height: 100%;
+}
+.descriptionModulo2_1 {
+	width: 60%;
+	padding-top: 1.8rem;
+	padding-left: 5rem;
+	font-weight: bold;
+}
+
+.highlightText {
+	color: var(--color--red);
+	font-weight: bolder;
+}
+
+.boxPrincipio {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.tipoPrincipio {
+	width: 15%;
+	padding: 1rem;
+	border-radius: 10px;
+	background-color: var(--color-red);
+	text-align: center;
+	color: var(--color-black);
+}
+
+.descPrincipio div {
+	width: 95%;
+	padding: 0.5rem;
+	margin-top: 0.5rem;
+	background-color: var(--color-red);
+	text-align: center;
+	color: var(--color-black);
+	font-size: max(12px, 0.9rem);
+	border-radius: 10px;
+}
+
+.descPrincipio div:nth-child(2),
+.descPrincipio div:nth-child(4),
+.descPrincipio div:nth-child(6) {
+	background-color: var(--color-gray);
+}
