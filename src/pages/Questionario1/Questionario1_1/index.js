@@ -29,7 +29,7 @@ function Questionario1_1() {
 						</p>
 					</div>
 				</div>
-				<Pagination up='/Modulo1_7' down='*' />
+				<Pagination up='/Modulo1_7' down='/Modulo2' />
 			</div>
 		</Layout>
 	);

@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../../components/Layout';
-import TitleModulo1_6 from '../../../components/TitleModulo1_6';
+import TitleModulo from '../../../components/TitleModulo';
 import Pagination from '../../../components/Pagination';
 import { Link } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ function Modulo1_4() {
 	return (
 		<Layout>
 			<div className='container'>
-				<TitleModulo1_6 />
+				<TitleModulo>Sobre o CICLO DE GOVERNANÇA DE TI</TitleModulo>
 				<div className='contentCardTextModulo1_4'>
 					<Link to='/Modulo1_2' className='cardModulo1_4'>
 						<div>
@@ -33,7 +33,7 @@ function Modulo1_4() {
 					</div>
 				</div>
 				<div>
-					<Pagination up='/Modulo1_1' dowm='/Modulo1_7' />
+					<Pagination up='/Modulo1_1' down='/Modulo1_7' />
 				</div>
 			</div>
 		</Layout>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../../components/Layout';
-import TitleModulo1_6 from '../../../components/TitleModulo1_6';
+import TitleModulo from '../../../components/TitleModulo';
 import Pagination from '../../../components/Pagination';
 import { Link } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ function Modulo1_3() {
 	return (
 		<Layout>
 			<div className='container'>
-				<TitleModulo1_6 />
+				<TitleModulo>Sobre o CICLO DE GOVERNANÇA DE TI</TitleModulo>
 				<div className='contentCardTextModulo1_3'>
 					<Link to='/Modulo1_2' className='cardModulo1_3'>
 						<div>
@@ -25,9 +25,9 @@ function Modulo1_3() {
 							{' '}
 							O ponto de partida primordial é assegurar que as iniciativas e os
 							cronogramas dos projetos de TI{' '}
-							<span>
+							<div className='highlightText'>
 								estejam completamente alinhados com as decisões estratégicas da empresa.
-							</span>
+							</div>
 						</p>
 						<p className='secondaryTextModule1_3'>
 							Identificar os objetivos de negócios e como a TI pode apoiar esses
@@ -37,7 +37,7 @@ function Modulo1_3() {
 					</div>
 				</div>
 				<div>
-					<Pagination up='/Modulo1_1' dowm='/Modulo1_7' />
+					<Pagination up='/Modulo1_1' down='/Modulo1_7' />
 				</div>
 			</div>
 		</Layout>
