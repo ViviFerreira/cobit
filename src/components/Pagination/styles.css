@@ -1,0 +1,22 @@
+.container-pagination {
+	width: 100vw;
+	height: 5rem;
+	position: absolute;
+	bottom: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+.buttons {
+	width: 6%;
+	display: flex;
+	justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+	.buttons {
+		width: 20%;
+		display: flex;
+		justify-content: space-around;
+	}
+}
