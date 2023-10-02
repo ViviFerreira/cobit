@@ -4,20 +4,43 @@ import TitleModulo from '../../../components/TitleModulo';
 import Pagination from '../../../components/Pagination';
 import { Link } from 'react-router-dom';
 
+import { motion } from 'framer-motion';
 import './styles.css';
 
 function Modulo1_6() {
+
+	const zoomIn = {
+		initial: { scale: 1 },
+		animate: { opacity: 0},
+		hover: { scale: 1.1 },
+	};
+
+	const slideInFromRight = {
+		initial: { x: '100%', opacity: 0 },
+		animate: { x: 0, opacity: 1 },
+		exit: { x: '-100%', opacity: 0 },
+	};
 	return (
 		<Layout>
 			<div className='container'>
 				<TitleModulo>Sobre o CICLO DE GOVERNANÇA DE TI</TitleModulo>
-				<div className='contentCardTextModulo1_6'>
+				<motion.div 
+				className='contentCardTextModulo1_6'
+				initial="initial"
+				animate="animate"
+				exit="exit"
+				variants={slideInFromRight}
+				>
 					<Link to='/Modulo1_2' className='cardModulo1_6'>
-						<div>
+						<motion.div
+						initial="initial"
+						whileHover="hover"
+						variants={zoomIn}
+						>
 							<ul>
 								<li>1. Medição do valor e do desempenho</li>
 							</ul>
-						</div>
+						</motion.div>
 					</Link>
 					<div className='textModulo1_6'>
 						<p className='primaryTextModule1_6'>
@@ -27,9 +50,9 @@ function Modulo1_6() {
 							<span>permitindo ajustes e melhorias contínuas.</span>
 						</p>
 					</div>
-				</div>
+				</motion.div>
 				<div>
-					<Pagination up='/Modulo1_1' down='/Modulo1_7' />
+					<Pagination up='/Modulo1_2' down='/Modulo1_7' />
 				</div>
 			</div>
 		</Layout>
