@@ -4,23 +4,47 @@ import TitleModulo from '../../../components/TitleModulo';
 import Pagination from '../../../components/Pagination';
 import { Link } from 'react-router-dom';
 
+
+import { motion } from 'framer-motion';
 import './styles.css';
 
 function Modulo1_4() {
+
+	const zoomIn = {
+		initial: { scale: 1 },
+		animate: { opacity: 0},
+		hover: { scale: 1.1 },
+	};
+
+	const slideInFromRight = {
+		initial: { x: '100%', opacity: 0 },
+		animate: { x: 0, opacity: 1 },
+		exit: { x: '-100%', opacity: 0 },
+	};
 	return (
 		<Layout>
 			<div className='container'>
 				<TitleModulo>Sobre o CICLO DE GOVERNANÇA DE TI</TitleModulo>
-				<div className='contentCardTextModulo1_4'>
+				<motion.div 
+				className='contentCardTextModulo1_4'
+				initial="initial"
+				animate="animate"
+				exit="exit"
+				variants={slideInFromRight}
+				>
 					<Link to='/Modulo1_2' className='cardModulo1_4'>
-						<div>
+						<motion.div
+						initial="initial"
+						whileHover="hover"
+						variants={zoomIn}
+						>
 							<ul>
 								<li>1. Decisão</li>
 								<li>2. Compromisso</li>
 								<li>3. Priorização</li>
 								<li>4. Alocação de recursos</li>
 							</ul>
-						</div>
+						</motion.div>
 					</Link>
 					<div className='textModulo1_4'>
 						<p className='primaryTextModule1_4'>
@@ -31,9 +55,9 @@ function Modulo1_4() {
 							aumentar os benefícios e diminuir os riscos
 						</p>
 					</div>
-				</div>
+				</motion.div>
 				<div>
-					<Pagination up='/Modulo1_1' down='/Modulo1_7' />
+					<Pagination up='/Modulo1_2' down='/Modulo1_7' />
 				</div>
 			</div>
 		</Layout>

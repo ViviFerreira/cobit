@@ -13,6 +13,7 @@ import Modulo1_6 from '../pages/Modulo1/modulo1_6';
 import Modulo1_7 from '../pages/Modulo1/Modulo1_7';
 import Modulo2_1 from '../pages/Modulo2/Modulo2_1';
 import Questionario1_1 from '../pages/Questionario1/Questionario1_1';
+import Questionario1_2 from '../pages/Questionario1/Questionario1_2';
 import Modulo2 from '../pages/Modulo2';
 import Modulo3 from '../pages/Modulo3';
 import Modulo4 from '../pages/Modulo4';

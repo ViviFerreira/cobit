@@ -4,13 +4,27 @@ import imgModulo1_7 from '../../../assets/img/imgModulo1_7.png';
 import Pagination from '../../../components/Pagination';
 import TitleModulo from '../../../components/TitleModulo';
 
+import { motion } from 'framer-motion';
 import './styles.css';
 
 function Modulo1_7() {
+
+	const fadeInFromTop = {
+		initial: { y: -100, opacity: 0 },
+		animate: { y: 0, opacity: 1 },
+		exit: { y: 100, opacity: 0 },
+	};
+
 	return (
 		<Layout>
-			<div className='container'>
 				<TitleModulo>O que é COBIT 2019?</TitleModulo>
+			<motion.div 
+			className='container'
+			initial="initial"
+			animate="animate"
+			exit="exit"
+			variants={fadeInFromTop}
+			>
 				<div className='contentTextImgModule1_7'>
 					<div className='textExpModule1_7'>
 						<p>
@@ -41,10 +55,8 @@ function Modulo1_7() {
 						<img src={imgModulo1_7}></img>
 					</div>
 				</div>
-				<div>
-					<Pagination up='/Modulo1_2' down='/Questionario1_1' />
-				</div>
-			</div>
+			</motion.div>
+			<Pagination up='/Modulo1_2' down='/Questionario1_1' />
 		</Layout>
 	);
 }

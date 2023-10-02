@@ -3,15 +3,28 @@ import Layout from '../../../components/Layout';
 import TitleModulo from '../../../components/TitleModulo';
 import Pagination from '../../../components/Pagination';
 import imgModulo1_1 from '../../../assets/img/imgModulo1_1.png';
+import { motion } from 'framer-motion';
 import './styles.css';
 
 function Modulo1_1() {
+	const fadeInFromTop = {
+		initial: { y: -100, opacity: 0 },
+		animate: { y: 0, opacity: 1 },
+		exit: { y: 100, opacity: 0 },
+	};
+
 	return (
 		<Layout>
-			<div className='container'>
+			<motion.div
+				className='container'
+				initial="initial"
+				animate="animate"
+				exit="exit"
+				variants={fadeInFromTop}
+			>
 				<TitleModulo>O que é GOVERNANÇA DE TI ?</TitleModulo>
 				<div className='contentModulo1_1'>
-					<div className='ListBox'>
+				<div className='ListBox'>
 						<p>Um conjunto de:</p>
 						<div className='item-1'>
 							<p>REGRAS</p>
@@ -44,9 +57,9 @@ function Modulo1_1() {
 					</div>
 				</div>
 				<div>
-					<Pagination up='/Modulo1' down='/Modulo1_2' />
 				</div>
-			</div>
+			</motion.div>
+			<Pagination up='/Modulo1' down='/Modulo1_2' />
 		</Layout>
 	);
 }

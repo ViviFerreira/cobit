@@ -1,17 +1,23 @@
 import React from 'react';
 import Pagination from '../Pagination';
 import './styles.css';
-
 import { motion } from 'framer-motion';
 import Layout from '../Layout';
 
 function Modulo({ number, subtitle, imgMudulo, up, down }) {
+	const fadeInFromTop = {
+		initial: { y: -100, opacity: 0 },
+		animate: { y: 0, opacity: 1 },
+		exit: { y: 100, opacity: 0 },
+	};
+
 	return (
 		<Layout>
 			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				exit={{ opacity: 0 }}
+				initial="initial"
+				animate="animate"
+				exit="exit"
+				variants={fadeInFromTop}
 				className='containerModulo'
 			>
 				<div className='circulo_1'></div>
@@ -24,10 +30,11 @@ function Modulo({ number, subtitle, imgMudulo, up, down }) {
 					</h1>
 					<p className='subtitleModulo'>{subtitle}</p>
 				</div>
-				<img className='imgModulo' src={imgMudulo}></img>
+				<img className='imgModulo' src={imgMudulo} alt={`Módulo ${number}`} />
 			</motion.div>
 			<Pagination up={up} down={down} />
 		</Layout>
 	);
 }
+
 export default Modulo;
