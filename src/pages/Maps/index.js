@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../../components/Layout';
+import ButtonMap from '../../components/ButtonMap'
 import { Link } from 'react-router-dom';
 import './styles.css';
 
@@ -23,18 +24,23 @@ function Maps() {
 			>
 				<div className='cardBackground'>
 					<Link to='/Modulo1' activeClassName='is-active'>
+					<ButtonMap/>
 						Modulo 1
 					</Link>
 					<Link to='/Modulo2' activeClassName='is-active'>
+					<ButtonMap/>
 						Modulo 2
 					</Link>
 					<Link to='/Modulo3' activeClassName='is-active'>
+					<ButtonMap/>
 						Modulo 3
 					</Link>
 					<Link to='/Modulo4' activeClassName='is-active'>
+					<ButtonMap/>
 						Modulo 4
 					</Link>
 					<Link to='/Modulo5' activeClassName='is-active'>
+					<ButtonMap/>
 						Modulo 5
 					</Link>
 				</div>
