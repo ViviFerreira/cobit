@@ -9,7 +9,7 @@ function Modulo3() {
 			subtitle='Objetivos de Governança e gestão'
 			imgMudulo={imgMudulo3}
 			up='/Maps'
-			down='*'
+			down='/Modulo3_1'
 		/>
 	);
 }
