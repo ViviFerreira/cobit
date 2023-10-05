@@ -10,7 +10,7 @@
 }
 
 .highlightText {
-	color: var(--color--red);
+	color: var(--color-red);
 	font-weight: bolder;
 }
 
@@ -21,28 +21,20 @@
 	align-items: center;
 }
 
-.tipoPrincipio {
-	width: 15%;
-	padding: 1rem;
-	border-radius: 10px;
-	background-color: var(--color-red);
-	text-align: center;
-	color: var(--color-black);
+.boxPrincipio img {
+	width: 55%;
+	margin-top: 2rem;
 }
 
-.descPrincipio div {
-	width: 95%;
-	padding: 0.5rem;
-	margin-top: 0.5rem;
-	background-color: var(--color-red);
-	text-align: center;
-	color: var(--color-black);
-	font-size: max(12px, 0.9rem);
-	border-radius: 10px;
-}
+@media screen and (max-width: 768px) {
+	.descriptionModulo2_1 {
+		width: 100%;
+		padding-left: 0.8rem;
+		font-size: 0.8rem;
+		box-sizing: border-box;
+	}
 
-.descPrincipio div:nth-child(2),
-.descPrincipio div:nth-child(4),
-.descPrincipio div:nth-child(6) {
-	background-color: var(--color-gray);
+	.boxPrincipio img {
+		width: 90%;
+	}
 }

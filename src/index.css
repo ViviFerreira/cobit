@@ -2,12 +2,12 @@
 
 :root {
 	--color-blue: #142d64;
-	--color-red: #ff745c;
+	--color-red: #ff0000;
 	--color-cobit: #950137;
 	--color-logo: #e3a5a5;
 	--color-white: #f9f9f9;
 	--color-black: #000000;
-	--color-gray: #d3d3d3;
+	--color-gray: #e8e2e2;
 	--color-green: #00a19d;
 	--font-inter: 'Inter', sans-serif;
 }
