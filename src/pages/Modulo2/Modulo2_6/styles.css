@@ -1,0 +1,22 @@
+.progress-bar5 {
+	height: 50px;
+	padding: 5px;
+	background-color: #ccc;
+}
+
+.progress-bar5 {
+	width: 80%;
+	height: 10px;
+	margin: 0 auto;
+	background-color: var(--color-gray);
+	border-radius: 50px;
+	display: flex;
+	--progress: 16.6;
+}
+
+.progress-bar5::before {
+	content: '';
+	width: 50%;
+	width: calc(var(--progress) * 5%);
+	background-color: var(--color-green);
+}
