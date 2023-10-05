@@ -21,9 +21,9 @@ import Modulo2_6 from '../pages/Modulo2/Modulo2_6';
 import Modulo2_7 from '../pages/Modulo2/Modulo2_7';
 
 import Questionario1_1 from '../pages/Questionario1/Questionario1_1';
-import Questionario1_2 from '../pages/Questionario1/Questionario1_2';
 import Modulo2 from '../pages/Modulo2';
 import Modulo3 from '../pages/Modulo3';
+import Modulo3_1 from '../pages/Modulo3/Modulo3_1';
 import Modulo4 from '../pages/Modulo4';
 import Modulo5 from '../pages/Modulo5';
 
@@ -38,6 +38,7 @@ export default () => {
 				<Route path='/' element={<Home />} />
 				<Route path='*' element={<PageError />} />
 				<Route path='/maps' element={<Maps />} />
+
 				<Route path='/modulo1' element={<Modulo1 />} />
 				<Route path='/modulo1_1' element={<Modulo1_1 />} />
 				<Route path='/modulo1_2' element={<Modulo1_2 />} />
@@ -46,7 +47,7 @@ export default () => {
 				<Route path='/modulo1_5' element={<Modulo1_5 />} />
 				<Route path='/modulo1_6' element={<Modulo1_6 />} />
 				<Route path='/modulo1_7' element={<Modulo1_7 />} />
-
+          
 				<Route path='/modulo2_1' element={<Modulo2_1 />} />
 				<Route path='/modulo2_2' element={<Modulo2_2 />} />
 				<Route path='/modulo2_3' element={<Modulo2_3 />} />
@@ -56,8 +57,12 @@ export default () => {
 				<Route path='/modulo2_7' element={<Modulo2_7 />} />
 
 				<Route path='/Questionario1_1' element={<Questionario1_1 />} />
+
 				<Route path='/modulo2' element={<Modulo2 />} />
+
 				<Route path='/modulo3' element={<Modulo3 />} />
+				<Route path='/modulo3_1' element={<Modulo3_1 />} />
+
 				<Route path='/modulo4' element={<Modulo4 />} />
 				<Route path='/modulo5' element={<Modulo5 />} />
 			</Routes>
