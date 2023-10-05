@@ -1,13 +1,14 @@
 import React from 'react';
 import './styles.css';
 
-
-function ButtonMap() {
-	return (
-		<div className='ButtonMap'>
-            <a href="#" class="button-3d">Push Me</a>
-            
-		</div>
-	);
+function ButtonMap({ icon, onClick, position }) {
+    return (
+        <div className='ButtonMap' style={{ position: 'absolute', ...position }}>
+            <a className="button-3d" onClick={onClick}>
+                {icon} 
+            </a>
+        </div>
+    );
 }
+
 export default ButtonMap;
