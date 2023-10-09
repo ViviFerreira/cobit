@@ -3,10 +3,45 @@
 	height: 100%;
 }
 
+.contentModulo3_1{
+    display: flex;
+    flex-direction: column;
+}
+
 .descriptionModulo3_1{
     display: flex;
-    font-size: 22px;
+    align-self: center;
     width: 50%;
+}
+
+.cardsModulo3_1{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+
+}
+
+.card1Modulo3_1,
+.card2Modulo3_1,
+.card3Modulo3_1,
+.card4Modulo3_1,
+.card5Modulo3_1{
+    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #FF745C;
+    width: 70%;
+    height: 7rem;
+}
+
+.cardLinha{
+    width: 20%;
+}
+
+.linha{
+    display: flex;
+    background-color: #FF745C;
+    width: 70%;
+    height: 1rem;
+    margin-top: 10px;
 }
