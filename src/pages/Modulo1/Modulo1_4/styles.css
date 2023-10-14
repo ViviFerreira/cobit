@@ -1,32 +1,32 @@
-.contentCardTextModulo1_4{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80%;
+.contentCardTextModulo1_4 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 80%;
 }
 
-.cardModulo1_4{
-    border: none;
-    background-color: #ff745c;
-    color: #fff;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    height: 8rem;
-    text-decoration: none;
+.cardModulo1_4 {
+	border: none;
+	background-color: var(--color-red);
+	color: #fff;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25%;
+	height: 8rem;
+	text-decoration: none;
 }
 
-.textModulo1_4{
-    width: 30%;
+.textModulo1_4 {
+	width: 30%;
 }
 
-.primaryTextModule1_4{
-    text-align: justify;
+.primaryTextModule1_4 {
+	text-align: justify;
 }
 
-.primaryTextModule1_4 span{
-    color: #ff745c;
-    font-weight: bolder;
+.primaryTextModule1_4 span {
+	color: var(--color-red);
+	font-weight: bolder;
 }

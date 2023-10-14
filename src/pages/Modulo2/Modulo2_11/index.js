@@ -26,7 +26,7 @@ function Modulo2_2() {
 					</div>
 				</div>
 				<div class='progress-bar9'></div>
-				<Pagination up='/Modulo2_10' down='/Modulo2_10' />
+				<Pagination up='/Modulo2_10' down='/Modulo3' />
 			</div>
 		</Layout>
 	);

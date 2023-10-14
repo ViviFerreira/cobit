@@ -7,7 +7,7 @@
 
 .cardModulo1_3 {
 	border: none;
-	background-color: #ff745c;
+	background-color: var(--color-red);
 	color: #fff;
 	border-radius: 10px;
 	display: flex;
@@ -34,6 +34,6 @@
 
 .primaryTextModule1_3 span,
 .secondaryTextModule1_3 span {
-	color: #ff745c;
+	color: var(--color-red);
 	font-weight: bolder;
 }

@@ -1,38 +1,38 @@
-.contentCardTextModulo1_6{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80%;
+.contentCardTextModulo1_6 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 80%;
 }
 
-.cardModulo1_6{
-    border: none;
-    background-color: #ff745c;
-    color: #fff;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    height: 8rem;
-    text-decoration: none;
+.cardModulo1_6 {
+	border: none;
+	background-color: var(--color-red);
+	color: #fff;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25%;
+	height: 8rem;
+	text-decoration: none;
 }
 
-.textModulo1_6{
-    width: 30%;
+.textModulo1_6 {
+	width: 30%;
 }
 
 .primaryTextModule1_6,
-.secondaryTextModule1_6{
-    text-align: justify;
+.secondaryTextModule1_6 {
+	text-align: justify;
 }
 
-.secondaryTextModule1_6{
-    display: flex;
-    margin-top: 30px;
+.secondaryTextModule1_6 {
+	display: flex;
+	margin-top: 30px;
 }
 
-.primaryTextModule1_6 span{
-    color: #ff745c;
-    font-weight: bolder;
+.primaryTextModule1_6 span {
+	color: var(--color-red);
+	font-weight: bolder;
 }

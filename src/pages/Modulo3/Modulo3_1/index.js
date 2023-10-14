@@ -15,35 +15,43 @@ function Modulo3_1() {
 
 	return (
 		<Layout>
-            <TitleModulo>OBJETIVOS de Governança e gestão</TitleModulo>
+			<TitleModulo>OBJETIVOS de Governança e gestão</TitleModulo>
 			<motion.div
 				className='container'
-				initial="initial"
-				animate="animate"
-				exit="exit"
+				initial='initial'
+				animate='animate'
+				exit='exit'
 				variants={fadeInFromTop}
 			>
-                <div className='descriptionModulo3_1'>
-                    <p>Os objetivos de governança e gestão no COBIT estão agrupados em cinco domínios que são denominados por verbos que expressam o propósito e as áreas de atividade desses objetivos.</p>
-                </div>
-                <div>
-                    <div>
-                        card
-                    </div>
-                    <div>
-                        card
-                    </div>
-                    <div>
-                        card
-                    </div>
-                    <div>
-                        card
-                    </div>
-                    <div>
-                        card
-                    </div>
-                </div>
-
+				<div className='descriptionModulo3_1'>
+					<p>
+						Os objetivos de governança e gestão no COBIT estão agrupados em cinco
+						domínios que são denominados por verbos que expressam o propósito e as
+						áreas de atividade desses objetivos.
+					</p>
+				</div>
+				<div class='cardsModulo3_1'>
+					<div class='card-group'>
+						<div class='cardModulo3_1 active'>EDM</div>
+						<div class='line-card line-active'></div>
+					</div>
+					<div class='card-group'>
+						<div class='cardModulo3_1'>APO</div>
+						<div class='line-card'></div>
+					</div>
+					<div class='card-group'>
+						<div class='cardModulo3_1'>BAI</div>
+						<div class='line-card'></div>
+					</div>
+					<div class='card-group'>
+						<div class='cardModulo3_1'>DSS</div>
+						<div class='line-card'></div>
+					</div>
+					<div class='card-group'>
+						<div class='cardModulo3_1'>MEA</div>
+						<div class='line-card'></div>
+					</div>
+				</div>
 			</motion.div>
 			<Pagination up='/Modulo3' down='/Modulo1_2' />
 		</Layout>

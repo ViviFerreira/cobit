@@ -2,9 +2,15 @@ import React from 'react';
 import Layout from '../../../components/Layout';
 import TitleModulo from '../../../components/TitleModulo';
 import Pagination from '../../../components/Pagination';
+import { motion } from 'framer-motion';
 import './styles.css';
 
 function Modulo2_2() {
+	const fadeInFromTop = {
+		initial: { x: 0 },
+		animate: { x: 16 },
+		exit: {},
+	};
 	return (
 		<Layout>
 			<div className='container'>
@@ -24,7 +30,13 @@ function Modulo2_2() {
 						</p>
 					</div>
 				</div>
-				<div class='progress-bar1'></div>
+				<motion.div
+					class='progress-bar1'
+					initial='initial'
+					animate='animate'
+					exit='exit'
+					variants={fadeInFromTop}
+				></motion.div>
 				<Pagination up='/Modulo2_1' down='/Modulo2_3' />
 			</div>
 		</Layout>
