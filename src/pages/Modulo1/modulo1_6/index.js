@@ -8,10 +8,9 @@ import { motion } from 'framer-motion';
 import './styles.css';
 
 function Modulo1_6() {
-
 	const zoomIn = {
 		initial: { scale: 1 },
-		animate: { opacity: 0},
+		animate: { opacity: 0 },
 		hover: { scale: 1.1 },
 	};
 
@@ -23,20 +22,18 @@ function Modulo1_6() {
 	return (
 		<Layout>
 			<div className='container'>
-				<TitleModulo>Sobre o CICLO DE GOVERNANÇA DE TI</TitleModulo>
-				<motion.div 
-				className='contentCardTextModulo1_6'
-				initial="initial"
-				animate="animate"
-				exit="exit"
-				variants={slideInFromRight}
+				<TitleModulo>
+					Sobre o <span class='title-destaque'>CICLO DE GOVERNANÇA DE TI</span>
+				</TitleModulo>
+				<motion.div
+					className='contentCardTextModulo1_6'
+					initial='initial'
+					animate='animate'
+					exit='exit'
+					variants={slideInFromRight}
 				>
 					<Link to='/Modulo1_2' className='cardModulo1_6'>
-						<motion.div
-						initial="initial"
-						whileHover="hover"
-						variants={zoomIn}
-						>
+						<motion.div initial='initial' whileHover='hover' variants={zoomIn}>
 							<ul>
 								<li>1. Medição do valor e do desempenho</li>
 							</ul>

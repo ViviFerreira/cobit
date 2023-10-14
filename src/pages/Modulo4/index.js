@@ -8,7 +8,7 @@ function Modulo4() {
 			number='4'
 			subtitle='Gerenciamento de desempenho'
 			imgMudulo={imgMudulo4}
-			up='/Maps'
+			up='/Mapa'
 			down='*'
 		/>
 	);

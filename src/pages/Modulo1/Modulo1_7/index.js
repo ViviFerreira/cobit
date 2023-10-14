@@ -16,13 +16,14 @@ function Modulo1_7() {
 
 	return (
 		<Layout>
-			<TitleModulo>O que é COBIT 2019?</TitleModulo>
+			<TitleModulo>
+				O que é <span class='title-destaque'>COBIT 2019?</span>
+			</TitleModulo>
 			<motion.div
 				className='container'
 				initial='initial'
 				animate='animate'
 				exit='exit'
-				variants={fadeInFromTop}
 			>
 				<div className='contentTextImgModule1_7'>
 					<div className='textExpModule1_7'>

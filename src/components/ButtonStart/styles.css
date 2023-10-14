@@ -3,24 +3,24 @@
 }
 
 .buttonStart {
-	font-size: max(20px, 1.2rem);
 	position: relative;
-	top: 40%;
-	left: 50%;
-	transform: translateX(-50%);
 	width: 100%;
+	height: 20%;
 	text-align: center;
-	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-size: max(20px, 1.2rem);
 }
 
 .button {
-	background: linear-gradient(90deg, var(--color-green) 0%, #028100 100%);
+	background: linear-gradient(
+		90deg,
+		var(--color-red) 0%,
+		var(--color-cobit) 100%
+	);
 	border: none;
 	border-radius: 50px;
-	transition: all 0.3s ease-in-out 0s;
 	cursor: pointer;
 	outline: none;
 	text-decoration: none;
@@ -28,56 +28,23 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 60%;
-	height: 12%;
-	margin-bottom: 40px;
-	transition: transform 0.1s;
+	width: 70%;
+	height: 50%;
+	animation: pulsar 2s infinite ease-in-out;
 }
 .texto {
 	margin-left: -6rem;
 }
 
-.buttonStart .button:hover {
-	background-color: #10af05;
-	color: #fff;
-	transform: scale(1.1);
-}
-
-.button:hover,
-.button:focus {
-	transform: translateY(-6px);
-}
-
-.button::after {
-	content: '';
-	width: 30px;
-	height: 30px;
-	border-radius: 100%;
-	border: 6px solid #10af05;
-	position: absolute;
-	z-index: -1;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	animation: ring 2s infinite;
-}
-
-.button:hover::after,
-.button:focus::after {
-	animation: none;
-	display: none;
-}
-
-@keyframes ring {
+@keyframes pulsar {
 	0% {
-		width: 30px;
-		height: 30px;
-		opacity: 1;
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.09);
 	}
 	100% {
-		width: 300px;
-		height: 300px;
-		opacity: 0;
+		transform: scale(1);
 	}
 }
 

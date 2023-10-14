@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from '../pages/Home';
 import PageError from '../pages/PageError';
-import Maps from '../pages/Maps';
+import Mapa from '../pages/Mapa';
 import Modulo1 from '../pages/Modulo1';
 import Modulo1_1 from '../pages/Modulo1/Modulo1_1';
 import Modulo1_2 from '../pages/Modulo1/Modulo1_2';
@@ -25,6 +25,17 @@ import Modulo2_10 from '../pages/Modulo2/Modulo2_10';
 import Modulo2_11 from '../pages/Modulo2/Modulo2_11';
 
 import Questionario1_1 from '../pages/Questionario1/Questionario1_1';
+import Questionario1_2 from '../pages/Questionario1/Questionario1_2';
+import Questionario1_3 from '../pages/Questionario1/Questionario1_3';
+import Questionario1_4 from '../pages/Questionario1/Questionario1_4';
+import Questionario1_5 from '../pages/Questionario1/Questionario1_5';
+
+import Questionario2_1 from '../pages/Questionario2/Questionario2_1';
+import Questionario2_2 from '../pages/Questionario2/Questionario2_2';
+import Questionario2_3 from '../pages/Questionario2/Questionario2_3';
+import Questionario2_4 from '../pages/Questionario2/Questionario2_4';
+import Questionario2_5 from '../pages/Questionario2/Questionario2_5';
+
 import Modulo2 from '../pages/Modulo2';
 import Modulo3 from '../pages/Modulo3';
 import Modulo3_1 from '../pages/Modulo3/Modulo3_1';
@@ -41,7 +52,7 @@ export default () => {
 			<Routes location={location} key={location.pathname}>
 				<Route path='/' element={<Home />} />
 				<Route path='*' element={<PageError />} />
-				<Route path='/maps' element={<Maps />} />
+				<Route path='/mapa' element={<Mapa />} />
 
 				<Route path='/modulo1' element={<Modulo1 />} />
 				<Route path='/modulo1_1' element={<Modulo1_1 />} />
@@ -65,6 +76,16 @@ export default () => {
 				<Route path='/modulo2_11' element={<Modulo2_11 />} />
 
 				<Route path='/Questionario1_1' element={<Questionario1_1 />} />
+				<Route path='/Questionario1_2' element={<Questionario1_2 />} />
+				<Route path='/Questionario1_3' element={<Questionario1_3 />} />
+				<Route path='/Questionario1_4' element={<Questionario1_4 />} />
+				<Route path='/Questionario1_5' element={<Questionario1_5 />} />
+
+				<Route path='/Questionario2_1' element={<Questionario2_1 />} />
+				<Route path='/Questionario2_2' element={<Questionario2_2 />} />
+				<Route path='/Questionario2_3' element={<Questionario2_3 />} />
+				<Route path='/Questionario2_4' element={<Questionario2_4 />} />
+				<Route path='/Questionario2_5' element={<Questionario2_5 />} />
 
 				<Route path='/modulo2' element={<Modulo2 />} />
 

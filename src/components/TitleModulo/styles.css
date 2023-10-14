@@ -4,6 +4,13 @@
 	align-items: center;
 	margin-top: 50px;
 	font-size: 2rem;
+	font-weight: 400;
+}
+
+.title-destaque {
+	font-weight: bolder;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {
