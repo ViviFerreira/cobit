@@ -10,20 +10,21 @@
 	font-weight: bold;
 }
 
+.imgtextQuest {
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 10rem;
+}
+
 .imgQuest {
 	width: 450px;
 	height: 350px;
 }
-
-.imgtextQuest {
-	margin-left: 60px;
-	margin-right: 60px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-}
-.textQuest p {
+.textQuest {
 	text-align: justify;
-	width: 60%;
+	width: 40%;
+	font-size: 1.3rem;
 }

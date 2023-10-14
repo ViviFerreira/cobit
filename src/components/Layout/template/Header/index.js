@@ -10,13 +10,13 @@ function Header() {
 	return (
 		<header className='navBar'>
 			<div className='navTitle'>
-				<h1 title="Logo da equipe desenvolvedora">
+				<h1 title='Logo da equipe desenvolvedora'>
 					C<span className='logo-cobit'>O</span>BITDynamiX
 				</h1>
 			</div>
 			<div className='icons'>
 				<div className='icon-1'>
-					<Link to='/Maps'>
+					<Link to='/Mapa'>
 						<FaMap size={30} color='#FFFFFF' />
 					</Link>
 				</div>

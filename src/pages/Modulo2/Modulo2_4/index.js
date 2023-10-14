@@ -8,7 +8,9 @@ function Modulo2_4() {
 	return (
 		<Layout>
 			<div className='container'>
-				<TitleModulo>PRINCÍPIOS do COBIT 2019</TitleModulo>
+				<TitleModulo>
+					<span className='title-destaque'>PRINCÍPIOS</span> do COBIT 2019
+				</TitleModulo>
 				<h1 className='titlePrincipio'>
 					Princípios de um <span>Sistema de Governança</span>
 				</h1>

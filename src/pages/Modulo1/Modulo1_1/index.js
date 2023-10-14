@@ -17,14 +17,16 @@ function Modulo1_1() {
 		<Layout>
 			<motion.div
 				className='container'
-				initial="initial"
-				animate="animate"
-				exit="exit"
+				initial='initial'
+				animate='animate'
+				exit='exit'
 				variants={fadeInFromTop}
 			>
-				<TitleModulo>O que é GOVERNANÇA DE TI ?</TitleModulo>
+				<TitleModulo>
+					O que é <span class='title-destaque'>GOVERNANÇA DE TI ?</span>
+				</TitleModulo>
 				<div className='contentModulo1_1'>
-				<div className='ListBox'>
+					<div className='ListBox'>
 						<p>Um conjunto de:</p>
 						<div className='item-1'>
 							<p>REGRAS</p>
@@ -56,8 +58,7 @@ function Modulo1_1() {
 						</div>
 					</div>
 				</div>
-				<div>
-				</div>
+				<div></div>
 			</motion.div>
 			<Pagination up='/Modulo1' down='/Modulo1_2' />
 		</Layout>

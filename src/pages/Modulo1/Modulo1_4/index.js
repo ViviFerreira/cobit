@@ -4,15 +4,13 @@ import TitleModulo from '../../../components/TitleModulo';
 import Pagination from '../../../components/Pagination';
 import { Link } from 'react-router-dom';
 
-
 import { motion } from 'framer-motion';
 import './styles.css';
 
 function Modulo1_4() {
-
 	const zoomIn = {
 		initial: { scale: 1 },
-		animate: { opacity: 0},
+		animate: { opacity: 0 },
 		hover: { scale: 1.1 },
 	};
 
@@ -24,20 +22,18 @@ function Modulo1_4() {
 	return (
 		<Layout>
 			<div className='container'>
-				<TitleModulo>Sobre o CICLO DE GOVERNANÇA DE TI</TitleModulo>
-				<motion.div 
-				className='contentCardTextModulo1_4'
-				initial="initial"
-				animate="animate"
-				exit="exit"
-				variants={slideInFromRight}
+				<TitleModulo>
+					Sobre o <span class='title-destaque'>CICLO DE GOVERNANÇA DE TI</span>
+				</TitleModulo>
+				<motion.div
+					className='contentCardTextModulo1_4'
+					initial='initial'
+					animate='animate'
+					exit='exit'
+					variants={slideInFromRight}
 				>
 					<Link to='/Modulo1_2' className='cardModulo1_4'>
-						<motion.div
-						initial="initial"
-						whileHover="hover"
-						variants={zoomIn}
-						>
+						<motion.div initial='initial' whileHover='hover' variants={zoomIn}>
 							<ul>
 								<li>1. Decisão</li>
 								<li>2. Compromisso</li>

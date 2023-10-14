@@ -9,7 +9,9 @@ function Modulo2_1() {
 	return (
 		<Layout>
 			<div className='container'>
-				<TitleModulo>PRINCÍPIOS do COBIT 2019</TitleModulo>
+				<TitleModulo>
+					<span className='title-destaque'>PRINCÍPIOS</span> do COBIT 2019
+				</TitleModulo>
 				<div className='contentModulo2_1'>
 					<div className='descriptionModulo2_1'>
 						Existem dois conjuntos de princípios dentro do COBIT 2019. Um conjunto de

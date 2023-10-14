@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import ButtonStart from '../../components/ButtonStart';
-import imgIntro from '../../assets/img/imgIntro.png';
+import imgIntro from '../../assets/img/imgIntro2.png';
 import './styles.css';
 
 import { motion } from 'framer-motion';
@@ -31,6 +31,7 @@ function Home() {
 					</p>
 				</div>
 				<div className='img-container'>
+					<img src={imgIntro} alt='Imagem sobre governança de TI' />
 					<ButtonStart />
 				</div>
 			</motion.div>
