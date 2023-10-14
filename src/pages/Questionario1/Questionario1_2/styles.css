@@ -1,32 +1,29 @@
 .titleQuest,
-.descriptionQuest1_1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+.descriptionQuest1_1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
 }
-.descriptionQuest h1 span{
-    color: #ff745c;
-    font-weight: bold;
-}
-
-.imgQuest{
-    width: 450px;
-    height: 350px;
+.descriptionQuest h1 span {
+	color: var(--color-red);
+	font-weight: bold;
 }
 
-.imgtextQuest{
-    margin-left: 60px ;
-    margin-right: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-
-}
-.textQuest p{
-    text-align: justify;
-    width: 60%;
+.imgQuest {
+	width: 450px;
+	height: 350px;
 }
 
-
+.imgtextQuest {
+	margin-left: 60px;
+	margin-right: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.textQuest p {
+	text-align: justify;
+	width: 60%;
+}

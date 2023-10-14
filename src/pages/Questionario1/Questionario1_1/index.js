@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../../../components/Layout';
 import introQuest1_1 from '../../../assets/img/introQuest1_1.png';
 import Pagination from '../../../components/Pagination';
+import TitleModulo from '../../../components/TitleModulo';
 import './styles.css';
 
 function Questionario1_1() {
@@ -9,13 +10,11 @@ function Questionario1_1() {
 		<Layout>
 			<div className='container'>
 				<div>
-					<div className='titleQuest1_1'>
-						<h1>QUESTIONÁRIO</h1>
-					</div>
+					<TitleModulo>QUESTIONÁRIO</TitleModulo>
 					<div className='descriptionQuest1_1'>
-						<h1>
-							Parabéns, Você concluiu o <span>MÓDULO 1</span>
-						</h1>
+						<TitleModulo>
+							Parabéns, Você concluiu <span> o MÓDULO 1</span>
+						</TitleModulo>
 					</div>
 				</div>
 				<div className='imgtextQuest'>

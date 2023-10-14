@@ -8,7 +8,6 @@ import { motion } from 'framer-motion';
 import './styles.css';
 
 function Modulo1_7() {
-
 	const fadeInFromTop = {
 		initial: { y: -100, opacity: 0 },
 		animate: { y: 0, opacity: 1 },
@@ -17,13 +16,13 @@ function Modulo1_7() {
 
 	return (
 		<Layout>
-				<TitleModulo>O que é COBIT 2019?</TitleModulo>
-			<motion.div 
-			className='container'
-			initial="initial"
-			animate="animate"
-			exit="exit"
-			variants={fadeInFromTop}
+			<TitleModulo>O que é COBIT 2019?</TitleModulo>
+			<motion.div
+				className='container'
+				initial='initial'
+				animate='animate'
+				exit='exit'
+				variants={fadeInFromTop}
 			>
 				<div className='contentTextImgModule1_7'>
 					<div className='textExpModule1_7'>
