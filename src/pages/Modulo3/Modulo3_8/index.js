@@ -1,10 +1,9 @@
 import React from 'react';
 import Layout from '../../../components/Layout';
-import TitleModulo from '../../../components/TitleModulo';
 import Pagination from '../../../components/Pagination';
-import imgModulo3_7 from '../../../assets/img/imgModulo3_7.png';
 import { motion } from 'framer-motion';
 import './styles.css';
+
 import { Link } from 'react-router-dom';
 
 function Modulo3_8() {
