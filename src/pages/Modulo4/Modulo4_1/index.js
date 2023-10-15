@@ -20,10 +20,11 @@ function Modulo4_1() {
 				initial='initial'
 				animate='animate'
 				exit='exit'
-				variants={fadeInFromTop}>
-
+				variants={fadeInFromTop}
+			>
 				<TitleModulo>
-					<span class='title-destaque'>GERENCIAMENTO DE DESEMPENHO</span> do COBIT 2019
+					<span class='title-destaque'>GERENCIAMENTO DE DESEMPENHO</span> do COBIT
+					2019
 				</TitleModulo>
 
 				<div className='contentModulo4_1'>
@@ -33,19 +34,28 @@ function Modulo4_1() {
 
 					<div className='textModulo4_1'>
 						<div>
-							<p className='textOne'>O CPM (Cobit Process Model - Modelo de Processo COBIT) é uma representação gráfica fundamental da estrutura hierárquica do COBIT. </p>
+							<p className='textOne'>
+								O CPM (Cobit Process Model - Modelo de Processo COBIT) é uma
+								representação gráfica fundamental da estrutura hierárquica do COBIT.{' '}
+							</p>
 						</div>
 						<div>
-							<p className='textTwo'>O propósito central do CPM é simplificar a compreensão de cada nível e promover a comunicação fluida entre as equipes de TI, a alta administração e outras partes envolvidas.</p>
+							<p className='textTwo'>
+								O propósito central do CPM é simplificar a compreensão de cada nível e
+								promover a comunicação fluida entre as equipes de TI, a alta
+								administração e outras partes envolvidas.
+							</p>
 						</div>
 						<div>
-							<p className='textThree'>Os níveis de capacidade compreendem seis estágios, começando do 0 e indo até o 5.</p>
+							<p className='textThree'>
+								Os níveis de capacidade compreendem seis estágios, começando do 0 e indo
+								até o 5.
+							</p>
 						</div>
 					</div>
-					
 				</div>
 			</motion.div>
-			<Pagination up='/Modulo4' down='/Mapa' />
+			<Pagination up='/Modulo4' down='/Modulo4_2' />
 		</Layout>
 	);
 }
