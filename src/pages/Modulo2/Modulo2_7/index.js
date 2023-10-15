@@ -8,7 +8,9 @@ function Modulo2_7() {
 	return (
 		<Layout>
 			<div className='container'>
-				<TitleModulo>PRINCÍPIOS do COBIT 2019</TitleModulo>
+				<TitleModulo>
+					<span className='title-destaque'>PRINCÍPIOS</span> do COBIT 2019
+				</TitleModulo>
 				<h1 className='titlePrincipio'>
 					Princípios de um <span>Sistema de Governança</span>
 				</h1>
@@ -25,7 +27,7 @@ function Modulo2_7() {
 					</div>
 				</div>
 				<div class='progress-bar6'></div>
-				<Pagination up='/Modulo2_6' down='/Modulo2_6' />
+				<Pagination up='/Modulo2_6' down='/Modulo2_8' />
 			</div>
 		</Layout>
 	);

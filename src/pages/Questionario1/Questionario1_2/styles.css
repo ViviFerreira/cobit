@@ -1,32 +1,39 @@
-.titleQuest,
-.descriptionQuest1_1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-}
-.descriptionQuest h1 span{
-    color: #ff745c;
-    font-weight: bold;
+.title-questão {
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 2rem;
+	text-align: center;
 }
 
-.imgQuest{
-    width: 450px;
-    height: 350px;
+.container-questões {
+	width: 100%;
+	height: 50%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	justify-items: center;
+	align-items: center;
 }
 
-.imgtextQuest{
-    margin-left: 60px ;
-    margin-right: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-
+.questão {
+	width: 80%;
+	height: 40%;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 5px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease-in-out;
+	background-color: var(--color-red);
+	color: var(--color-white);
 }
-.textQuest p{
-    text-align: justify;
-    width: 60%;
+
+.correct {
+	background-color: var(--color-green);
 }
 
-
+.questão:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}

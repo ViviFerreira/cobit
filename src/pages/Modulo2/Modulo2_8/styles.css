@@ -1,0 +1,40 @@
+.container {
+	width: 100%;
+	height: 100%;
+}
+.descriptionModulo2_1 {
+	width: 60%;
+	padding-top: 1.8rem;
+	padding-left: 5rem;
+	font-weight: bold;
+}
+
+.highlightText {
+	color: var(--color-red);
+	font-weight: bolder;
+}
+
+.boxPrincipio {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.boxPrincipio img {
+	width: 55%;
+	margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+	.descriptionModulo2_1 {
+		width: 100%;
+		padding-left: 0.8rem;
+		font-size: 0.8rem;
+		box-sizing: border-box;
+	}
+
+	.boxPrincipio img {
+		width: 90%;
+	}
+}

@@ -8,7 +8,7 @@ function Modulo3() {
 			number='3'
 			subtitle='Objetivos de Governança e gestão'
 			imgMudulo={imgMudulo3}
-			up='/Maps'
+			up='/Mapa'
 			down='/Modulo3_1'
 		/>
 	);

@@ -9,10 +9,10 @@
 .circuloHome {
 	width: 35vw;
 	height: 35vw;
-	border-radius: 100%;
+	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 	background-color: rgba(198, 54, 114, 0.1);
 	position: absolute;
-	left: -10rem;
+	left: 5rem;
 }
 .intro {
 	width: 60%;
@@ -24,12 +24,11 @@
 
 .intro .title {
 	font-size: max(40px, 4vw);
-	font-weight: 100;
-	background-color: #fff;
+	font-weight: 300;
 }
 
 .logo-cobit-home {
-	color: var(--color-red);
+	color: var(--color-cobit);
 }
 
 .intro .subTitle {
@@ -43,7 +42,7 @@
 
 .ano {
 	font-size: max(20px, 1.5vw);
-	color: var(--color-red);
+	color: var(--color-cobit);
 }
 
 .intro .description {
@@ -53,14 +52,17 @@
 
 .img-container {
 	display: flex;
-	background-image: url('../../assets/img/imgIntro.png');
-	align-items: flex-end;
+	align-items: center;
+	flex-direction: column;
 	justify-content: center;
 	width: 40%;
-	height: 80%;
-	background-size: 100%;
-	background-repeat: no-repeat;
+	height: 100%;
+	z-index: 0;
 	border-radius: 10px;
+}
+
+.img-container img {
+	width: 120%;
 }
 
 @media screen and (max-width: 768px) {

@@ -15,48 +15,32 @@ function Modulo3_1() {
 
 	return (
 		<Layout>
-            <TitleModulo>OBJETIVOS de Governança e gestão</TitleModulo>
+			<TitleModulo>OBJETIVOS de Governança e gestão</TitleModulo>
 			<motion.div
 				className='container'
 				initial="initial"
 				animate="animate"
 				exit="exit"
-				variants={fadeInFromTop}>
-                <div className='contentModulo3_1'>
-                    <div className='descriptionModulo3_1'>
-                        <p className=''>Os objetivos de governança e gestão no COBIT estão agrupados em cinco domínios que são denominados por verbos que expressam o propósito e as áreas de atividade desses objetivos.</p>
+				variants={fadeInFromTop}
+			>
+                <div className='descriptionModulo3_1'>
+                    <p>Os objetivos de governança e gestão no COBIT estão agrupados em cinco domínios que são denominados por verbos que expressam o propósito e as áreas de atividade desses objetivos.</p>
+                </div>
+                <div>
+                    <div>
+                        card
                     </div>
-                    <div className='cardsModulo3_1'>
-                        <div className='cardLinha'>
-                            <div className='card1Modulo3_1'>
-                                <p>card</p>
-                            </div>
-                            <div className='linha'></div>
-                        </div>
-                        <div className='cardLinha'>
-                            <div className='card2Modulo3_1'>
-                                <p>card</p>
-                            </div>
-                            <div className='linha'></div>
-                        </div>
-                        <div className='cardLinha'>
-                            <div className='card3Modulo3_1'>
-                                <p>card</p>
-                            </div>
-                            <div className='linha'></div>
-                        </div>
-                        <div className='cardLinha'>
-                            <div className='card4Modulo3_1'>
-                                <p>card</p>
-                            </div>
-                            <div className='linha'></div>
-                        </div>
-                        <div className='cardLinha'>
-                            <div className='card5Modulo3_1'>
-                                <p>card</p>
-                            </div>
-                            <div className='linha'></div>
-                        </div>
+                    <div>
+                        card
+                    </div>
+                    <div>
+                        card
+                    </div>
+                    <div>
+                        card
+                    </div>
+                    <div>
+                        card
                     </div>
                 </div>
 

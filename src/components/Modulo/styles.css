@@ -55,6 +55,7 @@
 
 .titleModulo {
 	font-size: max(25px, 2vw);
+	font-weight: 400;
 }
 
 .subtitleModulo {

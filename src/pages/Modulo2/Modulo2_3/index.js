@@ -2,13 +2,21 @@ import React from 'react';
 import Layout from '../../../components/Layout';
 import TitleModulo from '../../../components/TitleModulo';
 import Pagination from '../../../components/Pagination';
+import { motion } from 'framer-motion';
 import './styles.css';
 
 function Modulo1_3() {
+	const fadeInFromTop = {
+		initial: { x: 16 },
+		animate: { x: 32 },
+		exit: {},
+	};
 	return (
 		<Layout>
 			<div className='container'>
-				<TitleModulo>PRINCÍPIOS do COBIT 2019</TitleModulo>
+				<TitleModulo>
+					<span className='title-destaque'>PRINCÍPIOS</span> do COBIT 2019
+				</TitleModulo>
 				<h1 className='titlePrincipio'>
 					Princípios de um <span>Sistema de Governança</span>
 				</h1>
@@ -25,7 +33,13 @@ function Modulo1_3() {
 						</p>
 					</div>
 				</div>
-				<div class='progress-bar2'></div>
+				<motion.div
+					class='progress-bar2'
+					initial='initial'
+					animate='animate'
+					exit='exit'
+					variants={fadeInFromTop}
+				></motion.div>
 				<Pagination up='/Modulo2_2' down='/Modulo2_4' />
 			</div>
 		</Layout>

@@ -8,7 +8,7 @@ function Modulo5() {
 			number='5'
 			subtitle='Benefícios do COBIT 2019'
 			imgMudulo={imgMudulo5}
-			up='/Maps'
+			up='/Mapa'
 			down='*'
 		/>
 	);

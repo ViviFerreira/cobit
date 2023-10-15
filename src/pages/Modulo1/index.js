@@ -8,7 +8,7 @@ function Modulo1() {
 			number='1'
 			subtitle='Introdução de governança e COBIT 2019'
 			imgMudulo={imgMudulo1}
-			up='/Maps'
+			up='/Mapa'
 			down='/modulo1_1'
 		/>
 	);

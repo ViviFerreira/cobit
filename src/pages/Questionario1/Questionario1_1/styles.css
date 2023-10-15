@@ -1,32 +1,30 @@
 .titleQuest,
-.descriptionQuest{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+.descriptionQuest {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
 }
-.descriptionQuest h1 span{
-    color: #ff745c;
-    font-weight: bold;
-}
-
-.imgQuest{
-    width: 450px;
-    height: 350px;
+.descriptionQuest h1 span {
+	color: var(--color-red);
+	font-weight: bold;
 }
 
-.imgtextQuest{
-    margin-left: 60px ;
-    margin-right: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-
-}
-.textQuest p{
-    text-align: justify;
-    width: 60%;
+.imgtextQuest {
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 10rem;
 }
 
-
+.imgQuest {
+	width: 450px;
+	height: 350px;
+}
+.textQuest {
+	text-align: justify;
+	width: 40%;
+	font-size: 1.3rem;
+}

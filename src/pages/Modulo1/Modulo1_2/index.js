@@ -8,9 +8,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import './styles.css';
 
-
 function Modulo1_2() {
-
 	const fadeInFromTop = {
 		initial: { y: -100, opacity: 0 },
 		animate: { y: 0, opacity: 1 },
@@ -19,7 +17,7 @@ function Modulo1_2() {
 
 	const zoomIn = {
 		initial: { scale: 1 },
-		animate: { opacity: 0},
+		animate: { opacity: 0 },
 		hover: { scale: 1.1 },
 	};
 
@@ -31,13 +29,15 @@ function Modulo1_2() {
 
 	return (
 		<Layout>
-			<TitleModulo>Sobre o CICLO DE GOVERNANÇA DE TI</TitleModulo>
-			<motion.div 
-			className='container'
-			initial="initial"
-			animate="animate"
-			exit="exit"
-			variants={fadeInFromTop}
+			<TitleModulo>
+				Sobre o <span class='title-destaque'>CICLO DE GOVERNANÇA DE TI</span>
+			</TitleModulo>
+			<motion.div
+				className='container'
+				initial='initial'
+				animate='animate'
+				exit='exit'
+				variants={fadeInFromTop}
 			>
 				<div>
 					<div>
@@ -47,22 +47,19 @@ function Modulo1_2() {
 						</p>
 					</div>
 				</div>
-				<motion.div 
-				className='contentImgCard'
-				initial="initial"
-				animate="animate"
-				exit="exit"
-				variants={slideInFromRight}
+				<motion.div
+					className='contentImgCard'
+					initial='initial'
+					animate='animate'
+					exit='exit'
+					variants={slideInFromRight}
 				>
 					<div className='containerSetaModulo1_2'>
 						<img className='setaModulo1_2' src={setaModulo1_2}></img>
 					</div>
 					<div className='listCardModulo1_2'>
 						<Link to='/Modulo1_3' className='card1Modulo1_2'>
-							<motion.div 
-							initial="initial"
-							whileHover="hover"
-							variants={zoomIn}>
+							<motion.div initial='initial' whileHover='hover' variants={zoomIn}>
 								<ul>
 									<li>1. Alinhamento estratégico</li>
 									<li>2. Compliance</li>
@@ -70,11 +67,7 @@ function Modulo1_2() {
 							</motion.div>
 						</Link>
 						<Link to='/Modulo1_4' className='card2Modulo1_2'>
-							<motion.div
-							initial="initial"
-							whileHover="hover"
-							variants={zoomIn}
-							>
+							<motion.div initial='initial' whileHover='hover' variants={zoomIn}>
 								<ul>
 									<li>1. Decisão</li>
 									<li>2. Compromisso</li>
@@ -84,10 +77,7 @@ function Modulo1_2() {
 							</motion.div>
 						</Link>
 						<Link to='/Modulo1_5' className='card3Modulo1_2'>
-							<motion.div
-							initial="initial"
-							whileHover="hover"
-							variants={zoomIn}>
+							<motion.div initial='initial' whileHover='hover' variants={zoomIn}>
 								<ul>
 									<li>1. Estrutura</li>
 									<li>2. Processos</li>
@@ -97,10 +87,7 @@ function Modulo1_2() {
 							</motion.div>
 						</Link>
 						<Link to='/Modulo1_6' className='card4Modulo1_2'>
-							<motion.div
-							initial="initial"
-							whileHover="hover"
-							variants={zoomIn}>
+							<motion.div initial='initial' whileHover='hover' variants={zoomIn}>
 								<ul>
 									<li>1. Medição do valor e do desempenho</li>
 								</ul>
