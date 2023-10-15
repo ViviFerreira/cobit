@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contentModulo3_8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.edmBackground{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-radius: 20px 20px 0 0;
+    width: 80%;
+    height: 70px;
+    background-color: #FF745C;
+}
+
+.apoBackground,
+.baiBackground{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: 14rem;
+    margin-top: 5px;
+    width: 870px;
+    height: 140px;
+    background-color: #FF745C;
+}
+
+.dssBackground{
+    display: flex;
+    border-radius: 0 0 0 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: 14rem;
+    margin-top: 5px;
+    width: 870px;
+    height: 70px;
+    background-color: #FF745C;
+}
+
+.meaBackground{
+    position: absolute;
+    top: 8.7rem;
+    left: 63.1rem; 
+    border-radius: 0 0 20px 0;
+    justify-content: space-around;
+    margin-top: 5px;
+    width: 219px;
+    height: 361px;
+    background-color: #FF745C;
+}
+
+.cardModulo3_8{
+    display: flex;
+    margin-top: 10px;
+    background-color: #fff;
+    width: 13%;
+    height: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.textEdmModulo3_8{
+    display: flex;   
+}
+
+
+
+
+
+

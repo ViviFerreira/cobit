@@ -3,26 +3,14 @@ import Layout from '../../../components/Layout';
 import Pagination from '../../../components/Pagination';
 import TitleModulo from '../../../components/TitleModulo';
 
-import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 function Modulo3_1() {
-	const fadeInFromTop = {
-		initial: { y: -100, opacity: 0 },
-		animate: { y: 0, opacity: 1 },
-		exit: { y: 100, opacity: 0 },
-	};
-
 	return (
 		<Layout>
 			<TitleModulo>OBJETIVOS de Governança e gestão</TitleModulo>
-			<motion.div
-				className='container'
-				initial='initial'
-				animate='animate'
-				exit='exit'
-				variants={fadeInFromTop}
-			>
+			<div className='container'>
 				<div className='descriptionModulo3_1'>
 					<p>
 						Os objetivos de governança e gestão no COBIT estão agrupados em cinco
@@ -31,29 +19,39 @@ function Modulo3_1() {
 					</p>
 				</div>
 				<div class='cardsModulo3_1'>
+						<div class='card-group'>
+							<Link to='/Modulo3_2'>
+								<div class='cardModulo3_1 active'>EDM</div>
+								<div class='line-card line-active'></div>
+							</Link>
+						</div>
 					<div class='card-group'>
-						<div class='cardModulo3_1 active'>EDM</div>
-						<div class='line-card line-active'></div>
+						<Link to='/Modulo3_3'>
+							<div class='cardModulo3_1 active'>APO</div>
+							<div class='line-card line-active'></div>
+						</Link>
 					</div>
 					<div class='card-group'>
-						<div class='cardModulo3_1'>APO</div>
-						<div class='line-card'></div>
+						<Link to='/Modulo3_4'>
+							<div class='cardModulo3_1 active'>BAI</div>
+							<div class='line-card line-active'></div>
+						</Link>
 					</div>
 					<div class='card-group'>
-						<div class='cardModulo3_1'>BAI</div>
-						<div class='line-card'></div>
+						<Link to='/Modulo3_5'>
+							<div class='cardModulo3_1 active'>DSS</div>
+							<div class='line-card line-active'></div>
+						</Link>
 					</div>
 					<div class='card-group'>
-						<div class='cardModulo3_1'>DSS</div>
-						<div class='line-card'></div>
-					</div>
-					<div class='card-group'>
-						<div class='cardModulo3_1'>MEA</div>
-						<div class='line-card'></div>
+						<Link to='/Modulo3_6'>
+							<div class='cardModulo3_1 active'>MEA</div>
+							<div class='line-card line-active'></div>
+						</Link>
 					</div>
 				</div>
-			</motion.div>
-			<Pagination up='/Modulo3' down='/Modulo1_2' />
+			</div>
+			<Pagination up='/Modulo3' down='/Modulo3_7' />
 		</Layout>
 	);
 }
