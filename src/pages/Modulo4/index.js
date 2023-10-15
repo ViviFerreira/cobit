@@ -9,7 +9,7 @@ function Modulo4() {
 			subtitle='Gerenciamento de desempenho'
 			imgMudulo={imgMudulo4}
 			up='/Mapa'
-			down='*'
+			down='/Modulo4_1'
 		/>
 	);
 }
