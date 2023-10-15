@@ -23,7 +23,7 @@ function Modulo3_8() {
 				variants={fadeInFromTop}
 			>
 				<div className='contentModulo3_8'>
-					<div className='edmBackground'>
+					<Link to="/Modulo3_9" className='edmBackground'>
 						<div className='cardModulo3_8'>
 							<p className='textEdmModulo3_8'>EDM 1</p>
 						</div>
@@ -39,10 +39,10 @@ function Modulo3_8() {
 						<div className='cardModulo3_8'>
 							<p className='textEdmModulo3_8'>EDM 5</p>
 						</div>
-					</div>
+					</Link>
 					<div className='cardApoBaiDssMea'>
-						<div className='cardApoBaiDss'>
-							<div className='apoBackground'>
+						<div to="=" className='cardApoBaiDss'>
+							<Link to="/Modulo3_10" className='apoBackground'>
 								<div className='cardModulo3_8'>
 									<p className='textEdmModulo3_8'>APO 1</p>
 								</div>
@@ -85,7 +85,7 @@ function Modulo3_8() {
 								<div className='cardModulo3_8'>
 									<p className='textEdmModulo3_8'>APO 14</p>
 								</div>
-							</div>
+							</Link>
 							<div className='baiBackground'>
 								<div className='cardModulo3_8'>
 									<p className='textEdmModulo3_8'>BAI 1</p>

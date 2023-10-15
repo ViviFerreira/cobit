@@ -3,7 +3,7 @@
 	padding: 0;
 }
 
-.contentModulo3_10 {
+.contentModulo3_11 {
     margin-top: 20px;
 	display: flex;
     justify-content: center;
@@ -11,7 +11,7 @@
     width: 100%;
 }
 
-.apoBackgroundModulo3_10 {
+.baiBackgroundModulo3_11 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -21,7 +21,7 @@
 	background-color: #ff745c;
 }
 
-.cardModulo3_10 {
+.cardModulo3_11 {
 	display: flex;
 	background-color: #fff;
 	width: 13%;
@@ -31,7 +31,7 @@
 	align-items: center;
 }
 
-.cardInfoApo1{
+.cardInfoBai1{
     display: flex;
     background-color: #D9D9D9;
     justify-content: center;
@@ -42,16 +42,16 @@
  
 }
 
-.textApoModulo3_10 {
+.textBaiModulo3_11 {
 	display: flex;
 }
 
-.cardInfoApo1 p{
+.cardInfoBai1 p{
     text-align: center;
     padding: 5px;
 }
 
-.contentCardModulo3_10{
+.contentCardModulo3_11{
     width: 80%;
     margin-left: 140px;
     display: flex;
@@ -59,13 +59,13 @@
     align-items: center;
 }
 
-.line-cardInfoApo1{
+.line-cardInfoBai1{
     margin: 8px 0 8px 0;
     border-left: 10px dotted black;
     height: 50px; 
 }
 
-.aling-line-Modulo3_10{
+.aling-line-Modulo3_11{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
