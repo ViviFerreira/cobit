@@ -1,10 +1,9 @@
 import React from 'react';
 import Layout from '../../../components/Layout';
-import TitleModulo from '../../../components/TitleModulo';
 import Pagination from '../../../components/Pagination';
-import imgModulo3_7 from '../../../assets/img/imgModulo3_7.png';
 import { motion } from 'framer-motion';
 import './styles.css';
+
 import { Link } from 'react-router-dom';
 
 function Modulo3_8() {
@@ -24,7 +23,7 @@ function Modulo3_8() {
 				variants={fadeInFromTop}
 			>
 				<div className='contentModulo3_8'>
-					<div className='edmBackground'>
+					<Link to="/Modulo3_9" className='edmBackground'>
 						<div className='cardModulo3_8'>
 							<p className='textEdmModulo3_8'>EDM 1</p>
 						</div>
@@ -40,10 +39,10 @@ function Modulo3_8() {
 						<div className='cardModulo3_8'>
 							<p className='textEdmModulo3_8'>EDM 5</p>
 						</div>
-					</div>
+					</Link>
 					<div className='cardApoBaiDssMea'>
-						<div className='cardApoBaiDss'>
-							<div className='apoBackground'>
+						<div to="=" className='cardApoBaiDss'>
+							<Link to="/Modulo3_10" className='apoBackground'>
 								<div className='cardModulo3_8'>
 									<p className='textEdmModulo3_8'>APO 1</p>
 								</div>
@@ -86,7 +85,7 @@ function Modulo3_8() {
 								<div className='cardModulo3_8'>
 									<p className='textEdmModulo3_8'>APO 14</p>
 								</div>
-							</div>
+							</Link>
 							<div className='baiBackground'>
 								<div className='cardModulo3_8'>
 									<p className='textEdmModulo3_8'>BAI 1</p>

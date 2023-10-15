@@ -16,9 +16,7 @@ function Modulo3_9() {
 				<div className='contentModulo3_9'>
 					<div className='edmBackground'>
 						<div className='cardModulo3_9'>
-                            <Link to="Modulo3_10">
-							    <p className='textEdmModulo3_9'>EDM 1</p>   
-                            </Link>
+							<p className='textEdmModulo3_9'>EDM 1</p>
 						</div>
 						<div className='cardModulo3_9'>
 							<p className='textEdmModulo3_9'>EDM 2</p>
@@ -34,8 +32,41 @@ function Modulo3_9() {
 						</div>
 					</div>
 				</div>
+				<div className='contentCardModulo3_9'>
+					<div className='aling-line-Modulo3_9'>
+						<div className='line-cardInfoEdm1'></div>
+						<div className='cardInfoEdm1'>
+							<p>Definição e manutenção de um framework de governança assegurada</p>
+						</div>
+					</div>
+					<div  className='aling-line-Modulo3_9'>
+						<div className='line-cardInfoEdm1'></div>
+						<div className='cardInfoEdm1'>
+							<p>Entrega de benefícios assegurada</p>
+						</div>
+					</div>
+					<div  className='aling-line-Modulo3_9'>
+						<div className='line-cardInfoEdm1'></div>
+						<div className='cardInfoEdm1'>
+							<p>Otimização de riscos assegurada</p>
+						</div>
+					</div>
+					<div className='aling-line-Modulo3_9'>
+						<div className='line-cardInfoEdm1'></div>
+						<div className='cardInfoEdm1'>
+							<p>Otimização de recursos assegurada</p>
+						</div>
+					</div>
+					<div className='aling-line-Modulo3_9'>
+						<div className='line-cardInfoEdm1'></div>
+						<div className='cardInfoEdm1'>
+							<p>Engajamento  com as partes assegurado</p>
+						</div>
+					</div>
+					
+				</div>
 			</div>
-			<Pagination up='/Modulo3_8' down='/Questionario3_1' />
+			<Pagination up='/Modulo3_8' down='/Modulo3_8' />
 		</Layout>
 	);
 }
