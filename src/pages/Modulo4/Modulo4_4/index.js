@@ -1,0 +1,42 @@
+import React, { useState } from 'react';
+import Layout from '../../../components/Layout';
+import TitleModulo from '../../../components/TitleModulo';
+import Pagination from '../../../components/Pagination';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
+function Modulo4_4() {
+	const fadeInFromTop = {
+		initial: { y: -100, opacity: 0 },
+		animate: { y: 0, opacity: 1 },
+		exit: { y: 100, opacity: 0 },
+	};
+
+	return (
+		<Layout>
+			<motion.div
+				className='container'
+				initial='initial'
+				animate='animate'
+				exit='exit'
+				variants={fadeInFromTop}
+			>
+				<TitleModulo>
+					<span class='title-destaque'>Cobit Process Model </span>
+				</TitleModulo>
+
+				<Link to='/Modulo4_2'>
+					<div className='containerModulo4_3'>
+						<div class='title color1'>Nível 1</div>
+						<div class='description'>
+							O processo alcança seus objetivos de maneira insuficientemente
+							satisfatória devido a um conjunto incompleto de atividades iniciais.
+						</div>
+					</div>
+				</Link>
+			</motion.div>
+			<Pagination up='/Modulo4_3' down='/Modulo4_5' />
+		</Layout>
+	);
+}
+export default Modulo4_4;
