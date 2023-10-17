@@ -79,8 +79,6 @@ import Questionario4_3 from '../pages/Questionario4/Questionario4_3';
 import Questionario4_4 from '../pages/Questionario4/Questionario4_4';
 import Questionario4_5 from '../pages/Questionario4/Questionario4_5';
 
-import Modulo5 from '../pages/Modulo5';
-
 
 import { AnimatePresence } from 'framer-motion';
 
