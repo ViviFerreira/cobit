@@ -1,0 +1,37 @@
+
+.descriptionModulo5_1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.contentCardModulo5_1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    margin-top: 20px;
+    width: 40%;
+}
+
+.backgrounCardModulo5_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68B984;
+    width: 45px;
+    height: 35px;
+}
+
+.iconTextMoule5_1{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.iconTextMoule5_1 p{
+    margin-left: 10px;
+    font-weight: bold;
+}

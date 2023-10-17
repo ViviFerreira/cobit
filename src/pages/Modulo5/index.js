@@ -9,7 +9,7 @@ function Modulo5() {
 			subtitle='Benefícios do COBIT 2019'
 			imgMudulo={imgMudulo5}
 			up='/Mapa'
-			down='*'
+			down='/Modulo5_1'
 		/>
 	);
 }

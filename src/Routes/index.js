@@ -38,9 +38,19 @@ import Modulo3_9 from '../pages/Modulo3/Modulo3_9';
 import Modulo3_10 from '../pages/Modulo3/Modulo3_10';
 import Modulo3_11 from '../pages/Modulo3/Modulo3_11';
 
-
 import Modulo4 from '../pages/Modulo4';
 import Modulo4_1 from '../pages/Modulo4/Modulo4_1';
+
+import Modulo5 from '../pages/Modulo5';
+import Modulo5_1 from '../pages/Modulo5/Modulo5_1';
+import Modulo5_2 from '../pages/Modulo5/Modulo5_2';
+import Modulo5_3 from '../pages/Modulo5/Modulo5_3';
+import Modulo5_4 from '../pages/Modulo5/Modulo5_4';
+import Modulo5_5 from '../pages/Modulo5/Modulo5_5';
+import Modulo5_6 from '../pages/Modulo5/Modulo5_6';
+import Modulo5_7 from '../pages/Modulo5/Modulo5_7';
+import Modulo5_8 from '../pages/Modulo5/Modulo5_8';
+import Modulo5_9 from '../pages/Modulo5/Modulo5_9';
 
 import Questionario1_1 from '../pages/Questionario1/Questionario1_1';
 import Questionario1_2 from '../pages/Questionario1/Questionario1_2';
@@ -56,7 +66,6 @@ import Questionario2_5 from '../pages/Questionario2/Questionario2_5';
 
 import Questionario3_1 from '../pages/Questionario3/Questionario3_1';
 
-import Modulo5 from '../pages/Modulo5';
 
 import { AnimatePresence } from 'framer-motion';
 
@@ -111,6 +120,20 @@ export default () => {
 				<Route path='/Questionario1_4' element={<Questionario1_4 />} />
 				<Route path='/Questionario1_5' element={<Questionario1_5 />} />
 
+				<Route path='/modulo4' element={<Modulo4 />} />
+				<Route path='/Modulo4_1' element={<Modulo4_1 />} />
+
+				<Route path='/modulo5' element={<Modulo5 />} />
+				<Route path='/Modulo5_1' element={<Modulo5_1 />} />
+				<Route path='/Modulo5_2' element={<Modulo5_2 />} />
+				<Route path='/Modulo5_3' element={<Modulo5_3 />} />
+				<Route path='/Modulo5_4' element={<Modulo5_4 />} />
+				<Route path='/Modulo5_5' element={<Modulo5_5 />} />
+				<Route path='/Modulo5_6' element={<Modulo5_6 />} />
+				<Route path='/Modulo5_7' element={<Modulo5_7 />} />
+				<Route path='/Modulo5_8' element={<Modulo5_8 />} />
+				<Route path='/Modulo5_9' element={<Modulo5_9 />} />
+
 				<Route path='/Questionario2_1' element={<Questionario2_1 />} />
 				<Route path='/Questionario2_2' element={<Questionario2_2 />} />
 				<Route path='/Questionario2_3' element={<Questionario2_3 />} />
@@ -120,9 +143,6 @@ export default () => {
 				<Route path='/Questionario3_1' element={<Questionario3_1 />} />
 
 
-				<Route path='/modulo4' element={<Modulo4 />} />
-				<Route path='/Modulo4_1' element={<Modulo4_1 />} />
-				<Route path='/modulo5' element={<Modulo5 />} />
 			</Routes>
 		</AnimatePresence>
 	);
