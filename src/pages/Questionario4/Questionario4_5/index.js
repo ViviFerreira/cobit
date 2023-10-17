@@ -3,7 +3,7 @@ import Layout from '../../../components/Layout';
 import Pagination from '../../../components/Pagination';
 import TitleModulo from '../../../components/TitleModulo';
 
-function Questionario5_5() {
+function Questionario4_5() {
 	return (
 		<Layout>
 			<div className='container'>
@@ -29,4 +29,4 @@ function Questionario5_5() {
 		</Layout>
 	);
 }
-export default Questionario5_5;
+export default Questionario4_5;
