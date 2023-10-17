@@ -47,7 +47,7 @@ function Modulo4_2() {
 					</Link>
 				</div>
 			</motion.div>
-			<Pagination up='/Modulo4_1' down='/Modulo4_3' />
+			<Pagination up='/Modulo4_1' down='/Questionario4_1' />
 		</Layout>
 	);
 }
