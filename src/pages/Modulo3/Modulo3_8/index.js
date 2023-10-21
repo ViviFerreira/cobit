@@ -23,7 +23,7 @@ function Modulo3_8() {
 				variants={fadeInFromTop}
 			>
 				<div className='contentModulo3_8'>
-					<Link to="/Modulo3_9" className='edmBackground'>
+					<Link to='/Modulo3_9' className='edmBackground'>
 						<div className='cardModulo3_8'>
 							<p className='textEdmModulo3_8'>EDM 1</p>
 						</div>
@@ -41,8 +41,8 @@ function Modulo3_8() {
 						</div>
 					</Link>
 					<div className='cardApoBaiDssMea'>
-						<div to="=" className='cardApoBaiDss'>
-							<Link to="/Modulo3_10" className='apoBackground'>
+						<div to='=' className='cardApoBaiDss'>
+							<Link to='/Modulo3_10' className='apoBackground'>
 								<div className='cardModulo3_8'>
 									<p className='textEdmModulo3_8'>APO 1</p>
 								</div>
@@ -86,7 +86,7 @@ function Modulo3_8() {
 									<p className='textEdmModulo3_8'>APO 14</p>
 								</div>
 							</Link>
-							<div className='baiBackground'>
+							<Link to='/Modulo3_11' className='baiBackground'>
 								<div className='cardModulo3_8'>
 									<p className='textEdmModulo3_8'>BAI 1</p>
 								</div>
@@ -120,8 +120,8 @@ function Modulo3_8() {
 								<div className='cardModulo3_8'>
 									<p className='textEdmModulo3_8'>BAI 11</p>
 								</div>
-							</div>
-							<div className='dssBackground'>
+							</Link>
+							<Link to='/Modulo3_12' className='dssBackground'>
 								<div className='cardModulo3_8'>
 									<p className='textEdmModulo3_8'>DSS 1</p>
 								</div>
@@ -140,9 +140,9 @@ function Modulo3_8() {
 								<div className='cardModulo3_8'>
 									<p className='textEdmModulo3_8'>DSS 6</p>
 								</div>
-							</div>
+							</Link>
 						</div>
-						<div className='meaBackground'>
+						<Link to='/Modulo3_13' className='meaBackground'>
 							<div className='cardMeaModulo3_8'>
 								<p className='textEdmModulo3_8'>MEA 1</p>
 							</div>
@@ -158,7 +158,7 @@ function Modulo3_8() {
 							<div className='cardMeaModulo3_8'>
 								<p className='textEdmModulo3_8'>MEA 1</p>
 							</div>
-						</div>
+						</Link>
 					</div>
 				</div>
 			</motion.div>

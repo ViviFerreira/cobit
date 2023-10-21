@@ -10,17 +10,24 @@ import { Link } from 'react-router-dom';
 function Modulo3_2() {
 	return (
 		<Layout>
-			<TitleModulo>OBJETIVOS de Governança e gestão</TitleModulo>
+			<TitleModulo>
+				<span className='title-destaque'>OBJETIVOS </span> de Governança e gestão
+			</TitleModulo>
 			<div className='container'>
 				<motion.div class='cardsModulo3_2'>
 					<div class='card1-group'>
-						<div class='card1Modulo3_2 active'><p>Evaluate, Direct and Monitor</p></div>
-                        <div className='line'></div>
-						<div class='card1Modulo3_2 active'><p>Avaliar, Direcionar e Monitorar</p></div>
+						<div class='card1Modulo3_2 active'>
+							<p>Evaluate, Direct and Monitor</p>
+						</div>
+						<div className='line'></div>
+						<div class='card1Modulo3_2 active'>
+							<p>Avaliar, Direcionar e Monitorar</p>
+						</div>
 						<div class='line-card line-active'></div>
 					</div>
 					<div class='card-group'>
-						<Link to="/Modulo3_3">
+						N
+						<Link to='/Modulo3_3'>
 							<div class='card2Modulo3_2 active'>APO</div>
 							<div class='line-card line-active'></div>
 						</Link>
@@ -32,13 +39,13 @@ function Modulo3_2() {
 						</Link>
 					</div>
 					<div class='card-group'>
-						<Link to="Modulo3_5">
+						<Link to='Modulo3_5'>
 							<div class='card4Modulo3_2 active'>DSS</div>
 							<div class='line-card line-active'></div>
 						</Link>
 					</div>
 					<div class='card-group'>
-						<Link to="Modulo3_6">
+						<Link to='Modulo3_6'>
 							<div class='card5Modulo3_2 active'>MEA</div>
 							<div class='line-card line-active'></div>
 						</Link>

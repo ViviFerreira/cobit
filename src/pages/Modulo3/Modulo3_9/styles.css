@@ -1,83 +1,45 @@
-*{
-    margin: 0;
-    padding: 0;
+.contentCardModulo3_9 {
+	width: 80%;
+	margin-left: 140px;
+	margin-top: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
-
-.contentModulo3_9{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.cardInfoEdm1 {
+	display: flex;
+	background-color: var(--color-blue-light);
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 150px;
 }
 
-.edmBackground{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    border-radius: 20px 20px 0 0;
-    width: 80%;
-    height: 70px;
-    background-color: #FF745C;
+.cardInfoEdm1 p {
+	text-align: center;
+	padding: 5px;
+	font-size: 0.9rem;
+	color: var(--color-white);
+	font-weight: 500;
 }
 
-
-.cardModulo3_9{
-    display: flex;
-    margin-top: 10px;
-    background-color: #fff;
-    width: 13%;
-    height: 50px;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
+.line-cardInfoEdm1 {
+	margin: 8px 0 8px 0;
+	border-left: 5px dotted var(--color-blue-light);
+	height: 100px;
+	width: 0;
 }
 
-.textEdmModulo3_9{
-    display: flex;   
+.aling-line-Modulo3_9 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.contentCardModulo3_9{
-    width: 80%;
-    margin-left: 140px;
-    margin-top: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.cardInfoEdm1{
-    display: flex;
-    background-color: #D9D9D9;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    width: 150px;
-    height: 200px;
-    
-}
-
-.cardInfoEdm1 p{
-    text-align: center;
-    padding: 5px;
-}
-
-.line-cardInfoEdm1{
-    margin: 8px 0 8px 0;
-    border-left: 10px dotted black;
-    height: 100px; 
-    width: 0;
-}
-
-.aling-line-Modulo3_9{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.line-cardInfoEdm1{
-    margin: 8px 0 8px 0;
-    border-left: 10px dotted black;
-    height: 100px; 
-    width: 0;
+.line-cardInfoEdm1 {
+	margin: 8px 0 8px 0;
+	border-left: 5px dotted var(--color-blue-light);
+	height: 100px;
+	width: 0;
 }
