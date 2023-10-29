@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.contentModulo3_13 {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.meaBackgroundModulo3_13 {
+	display: flex;
+	flex-direction: column;
+	border-radius: 0 0 10px 0;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 5px;
+	width: 100%;
+	height: 98.5%;
+	box-sizing: border-box;
+	background-color: var(--color-blue-light);
+	color: var(--color-black);
+}
+
+.cardApoBaiDssMeaModulo3_13 {
+	width: 20%;
+	height: 445px;
+	display: flex;
+	gap: 8px;
+	background-color: var(--color-blue);
+	margin-top: 8px;
+	padding: 10px;
+}
+
+.cardModulo3_13 {
+	display: flex;
+	background-color: var(--color-white);
+	width: 13%;
+	height: 50px;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.cardMeaModulo3_13 {
+	display: flex;
+	background-color: var(--color-white);
+	width: 70%;
+	height: 50px;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.textEdmModulo3_13 {
+	display: flex;
+}
+.cardInfoMea1 {
+	display: flex;
+	background-color: var(--color-blue-light);
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+    margin-bottom: 10px;
+	height: 100px;
+}
+
+.cardInfoMea1 p {
+	text-align: center;
+	padding: 5px;
+	font-size: 0.9rem;
+	color: var(--color-white);
+	font-weight: 500;
+}
+
+.contentCardModulo3_13 {
+	width: 12%;
+    flex-direction: column;
+	display: flex;
+	align-items: center;
+}
+
+.line-cardInfoMea1 {
+	margin: 8px 0 8px 0;
+	border-top: 5px dotted var(--color-blue-light);
+	width: 50px;
+}
+
+.aling-line-Modulo3_13 {
+	display: flex;
+	align-items: center;
+}

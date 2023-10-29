@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.containerModulo3_12 {
+	margin-top: 1.5rem;
+}
+
+.contentModulo3_12 {
+    margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 25%;
+}
+
+.dssBackgroundModulo3_12 {
+	display: flex;
+	color: black;
+	text-decoration: none;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	height: 100%;
+	background-color: var(--color-blue);
+}
+
+.cardModulo3_12 {
+	display: flex;
+	background-color: #fff;
+	width: 13%;
+	height: 50px;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.cardInfoDss1 {
+	display: flex;
+	background-color: var(--color-blue-light);
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 100px;
+}
+
+.textBaiModulo3_12 {
+	display: flex;
+}
+
+.cardInfoDss1 p {
+	text-align: center;
+	padding: 5px;
+	font-size: 0.9rem;
+	color: var(--color-white);
+	font-weight: 500;
+}
+
+.contentCardModulo3_12 {
+	width: 85%;
+	margin-left: 135px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.line-cardInfoDss1 {
+	margin: 8px 0 8px 0;
+	border-left: 5px dotted var(--color-blue-light);
+	height: 50px;
+}
+
+.aling-line-Modulo3_12 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
