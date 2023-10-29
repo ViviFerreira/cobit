@@ -37,6 +37,8 @@ import Modulo3_8 from '../pages/Modulo3/Modulo3_8';
 import Modulo3_9 from '../pages/Modulo3/Modulo3_9';
 import Modulo3_10 from '../pages/Modulo3/Modulo3_10';
 import Modulo3_11 from '../pages/Modulo3/Modulo3_11';
+import Modulo3_12 from '../pages/Modulo3/Modulo3_12';
+import Modulo3_13 from '../pages/Modulo3/Modulo3_13';
 
 import Modulo4 from '../pages/Modulo4';
 import Modulo4_1 from '../pages/Modulo4/Modulo4_1';
@@ -132,6 +134,8 @@ export default () => {
 				<Route path='/Modulo3_9' element={<Modulo3_9 />} />
 				<Route path='/Modulo3_10' element={<Modulo3_10 />} />
 				<Route path='/Modulo3_11' element={<Modulo3_11 />} />
+				<Route path='/Modulo3_12' element={<Modulo3_12 />} />
+				<Route path='/Modulo3_13' element={<Modulo3_13 />} />
 				
 				<Route path='/modulo4' element={<Modulo4 />} />
 				<Route path='/Modulo4_1' element={<Modulo4_1 />} />

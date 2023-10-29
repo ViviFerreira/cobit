@@ -56,7 +56,7 @@ function Modulo3_10() {
 				</div>
 				<div className='contentModulo3_10'>
 					<div className='cardApoBaiDssMea'>
-						<Link to='/Modulo3_10' className='apoBackground'>
+						<Link to='/Modulo3_8' className='apoBackground'>
 							<div className='cardModulo3_8'>
 								<p className='textEdmModulo3_8'>APO 1</p>
 							</div>

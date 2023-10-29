@@ -11,7 +11,7 @@ function Modulo3_9() {
 		<Layout>
 			<div className='containerModulo3_9'>
 				<div className='contentModulo3_8'>
-					<div className='edmBackground'>
+					<Link to="/Modulo3_8" className='edmBackground'>
 						<div className='cardModulo3_8'>
 							<p className='textEdmModulo3_8'>EDM 1</p>
 						</div>
@@ -27,7 +27,7 @@ function Modulo3_9() {
 						<div className='cardModulo3_8'>
 							<p className='textEdmModulo3_8'>EDM 5</p>
 						</div>
-					</div>
+					</Link>
 				</div>
 				<div className='contentCardModulo3_9'>
 					<div className='aling-line-Modulo3_9'>
