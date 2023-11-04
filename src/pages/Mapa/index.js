@@ -44,13 +44,7 @@ function Mapa() {
 							position={{ top: '15%', left: '15%' }}
 							isClickable={verificarDesbloqueio(0)}
 							onClick={() => {
-								
-								console.log(verificarDesbloqueio(0));
-								console.log(verificarDesbloqueio(1));
-								console.log(verificarDesbloqueio(2));
-								console.log(verificarDesbloqueio(3));
-								console.log(verificarDesbloqueio(4));
-								
+							
 							}}
 						/>
                     </Link>
@@ -60,8 +54,6 @@ function Mapa() {
 							icon={<BsFill2CircleFill size={40} color='#FFFFFF'/>}
 							position={{ top: '30%', left: '30%' }}
 							isClickable={verificarDesbloqueio(1)}
-							
-							
 						/>
 					</Link>
 
@@ -70,7 +62,6 @@ function Mapa() {
 							icon={<BsFill3CircleFill size={40} color='#FFFFFF'/>}
 							position={{ top: '45%', left: '45%' }}
 							isClickable={verificarDesbloqueio(2)}
-							
 						/>
 					</Link>
 
@@ -79,7 +70,6 @@ function Mapa() {
 							icon={<BsFill4CircleFill size={40} color='#FFFFFF'/>}
 							position={{ top: '60%', left: '60%' }}
 							isClickable={verificarDesbloqueio(3)}
-							
 						/>
 					</Link>
 
@@ -88,7 +78,6 @@ function Mapa() {
 							icon={<BsFill5CircleFill size={40} color='#FFFFFF'/>}
 							position={{ top: '75%', left: '75%' }}
 							isClickable={verificarDesbloqueio(4)}
-							
 						/>
 					</Link>
 				</div>
