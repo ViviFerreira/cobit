@@ -64,6 +64,7 @@ function Mapa() {
 						<ButtonMap
 							icon={<BsFill5CircleFill size={30} color='#FFFFFF'/>}
 							position={{ top: '75%', left: '75%' }}
+							
 						/>
 					</Link>
 				</div>

@@ -74,6 +74,7 @@ import Questionario2_4 from '../pages/Questionario2/Questionario2_4';
 import Questionario2_5 from '../pages/Questionario2/Questionario2_5';
 
 import Questionario3_1 from '../pages/Questionario3/Questionario3_1';
+import Questionario3_2 from '../pages/Questionario3/Questionario3_2';
 
 import Questionario4_1 from '../pages/Questionario4/Questionario4_1';
 import Questionario4_2 from '../pages/Questionario4/Questionario4_2';
@@ -170,6 +171,7 @@ export default () => {
 				<Route path='/Questionario2_5' element={<Questionario2_5 />} />
 
 				<Route path='/Questionario3_1' element={<Questionario3_1 />} />
+				<Route path='/Questionario3_2' element={<Questionario3_2 />} />
 
 				<Route path='/Questionario4_1' element={<Questionario4_1 />} />
 				<Route path='/Questionario4_2' element={<Questionario4_2 />} />

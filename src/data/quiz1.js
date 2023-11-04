@@ -21,7 +21,7 @@ export const quiz1 = [
 			{
 				resposta:
 					' O alinhamento estratégico é uma responsabilidade exclusiva do departamento de TI.',
-				correta: true,
+				correta: false,
 			},
 		],
 	},
@@ -45,7 +45,7 @@ export const quiz1 = [
 			},
 			{
 				resposta: 'O COBIT se concentra apenas na gestão de recursos humanos.',
-				correta: true,
+				correta: false,
 			},
 		],
 	},
@@ -66,7 +66,7 @@ export const quiz1 = [
 			{
 				resposta:
 					'Os domínios centrais do COBIT se referem aos diferentes departamentos de uma organização.',
-				correta: true,
+				correta: false,
 			},
 			{
 				resposta:
@@ -92,11 +92,11 @@ export const quiz1 = [
 			{
 				resposta:
 					'A fase de "Decisão" envolve apenas escolhas aleatórias sem base em dados.',
-				correta: true,
+				correta: false,
 			},
 			{
 				resposta: 'A fase de "Decisão" não está relacionada à governança de TI.',
-				correta: true,
+				correta: false,
 			},
 		],
 	},
