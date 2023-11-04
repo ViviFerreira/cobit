@@ -8,8 +8,8 @@
 	width: 100%;
 }
 
-h1{
-	cursor: pointer
+h1 {
+	cursor: pointer;
 }
 
 .logo-cobit {
@@ -34,6 +34,12 @@ h1{
 
 .icons p {
 	padding-left: 30px;
+}
+
+.points {
+	position: absolute;
+	top: 0.2rem;
+	font-size: 1rem;
 }
 
 @media screen and (max-width: 768px) {
