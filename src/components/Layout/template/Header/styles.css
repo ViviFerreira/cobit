@@ -19,6 +19,8 @@ h1{
 .navTitle {
 	font-family: var(--font-inter);
 	font-size: 12px;
+	text-decoration: none;
+	color: white;
 }
 
 .icons {

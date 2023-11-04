@@ -44,8 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
             div.innerHTML = `
             <button class="answer" data-correct="${answer.correct}">
                 ${answer.option}
-            </button>
-            `;
+            </button>`;
 
             answers.appendChild(div)
         });
