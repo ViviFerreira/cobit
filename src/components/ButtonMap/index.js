@@ -1,17 +1,23 @@
 import React from 'react';
 import './styles.css';
 
-function ButtonMap({ icon, onClick, position, isClickable }) {
+function ButtonMap({ icon, position, isClickable, onClick }) {
+    const handleClick = () => {
+        if (isClickable && onClick) {
+            onClick();
+        }
+    };
+
     return (
-        <div className='ButtonMap' style={{ position: 'absolute', ...position }}>
-            <div
-                className="button-3d"
-               
-            >{icon}</div>
-        </div>
+        <button
+            className={`ButtonMap ${isClickable ? 'clickable' : 'unclickable'} ${!isClickable ? 'disabled' : ''}`}
+            style={{ position: 'absolute', ...position }}
+            onClick={handleClick}
+            disabled={!isClickable}
+        >
+            <span className="icon">{icon}</span>
+        </button>
     );
 }
-
-
 
 export default ButtonMap;

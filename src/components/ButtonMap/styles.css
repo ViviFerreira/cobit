@@ -6,9 +6,9 @@
 
 }
 
-.button-3d {
+button {
   position: relative;
-  width: 60px;
+  width: auto;
   color: #ecf0f1;
   text-decoration: none;
   border-radius: 50%;
@@ -19,7 +19,7 @@
   margin: 12px;
   transition: all 0.1s;
   box-shadow: 0px 6px 0px #d35400;
-  height: 60px;
+  height: 70px;
   display: flex ;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@
   box-shadow: 0px 6px 0px #d35400;
 }
 
-.button-3d:active{
+button:active{
   -webkit-box-shadow: 0px 2px 0px #d35400;
   -moz-box-shadow: 0px 2px 0px #d35400;
   box-shadow: 0px 2px 0px #d35400;
@@ -41,6 +41,15 @@
   top:4px;
 }
 
-.button-3d:hover{
+button:hover{
   background-color: #fa6400;
 }
+
+.ButtonMap.disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  border: solid 1px gray;
+  box-shadow: 0px 6px 0px #ccc;
+}
+
