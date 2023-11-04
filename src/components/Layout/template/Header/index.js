@@ -11,11 +11,11 @@ function Header() {
 
 	return (
 		<header className='navBar'>
-			<div className='navTitle'>
+			<Link to="/" className='navTitle'>
 				<h1 title='Logo da equipe desenvolvedora'>
 					C<span className='logo-cobit'>O</span>BITDynamiX
 				</h1>
-			</div>
+			</Link>
 			<div className='icons'>
 				<div className='icon-1'>
 					<Link to='/Mapa'>

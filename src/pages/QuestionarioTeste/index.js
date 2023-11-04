@@ -1,11 +1,11 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import TitleModulo from '../../components/TitleModulo';
-import scripts from './scripts'
+
 
 import './styles.css';
 
-function Questionario5_2() {
+function QuestionarioTeste() {
 	return (
 		<Layout>
 			<div className='container'>
@@ -30,4 +30,4 @@ function Questionario5_2() {
 		</Layout>
 	);
 }
-export default Questionario5_2;
+export default QuestionarioTeste;
