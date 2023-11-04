@@ -63,30 +63,20 @@ import Modulo5_9 from '../pages/Modulo5/Modulo5_9';
 
 import Questionario1_1 from '../pages/Questionario1/Questionario1_1';
 import Questionario1_2 from '../pages/Questionario1/Questionario1_2';
-import Questionario1_3 from '../pages/Questionario1/Questionario1_3';
-import Questionario1_4 from '../pages/Questionario1/Questionario1_4';
-import Questionario1_5 from '../pages/Questionario1/Questionario1_5';
 
 import Questionario2_1 from '../pages/Questionario2/Questionario2_1';
 import Questionario2_2 from '../pages/Questionario2/Questionario2_2';
-import Questionario2_3 from '../pages/Questionario2/Questionario2_3';
-import Questionario2_4 from '../pages/Questionario2/Questionario2_4';
-import Questionario2_5 from '../pages/Questionario2/Questionario2_5';
 
 import Questionario3_1 from '../pages/Questionario3/Questionario3_1';
 import Questionario3_2 from '../pages/Questionario3/Questionario3_2';
 
 import Questionario4_1 from '../pages/Questionario4/Questionario4_1';
 import Questionario4_2 from '../pages/Questionario4/Questionario4_2';
-import Questionario4_3 from '../pages/Questionario4/Questionario4_3';
-import Questionario4_4 from '../pages/Questionario4/Questionario4_4';
-import Questionario4_5 from '../pages/Questionario4/Questionario4_5';
+
 
 import Questionario5_1 from '../pages/Questionario5/Questionario5_1';
 import Questionario5_2 from '../pages/Questionario5/Questionario5_2';
-import Questionario5_3 from '../pages/Questionario5/Questionario5_3';
-import Questionario5_4 from '../pages/Questionario5/Questionario5_4';
-import Questionario5_5 from '../pages/Questionario5/Questionario5_5';
+
 
 import { AnimatePresence } from 'framer-motion';
 
@@ -160,30 +150,18 @@ export default () => {
 
 				<Route path='/Questionario1_1' element={<Questionario1_1 />} />
 				<Route path='/Questionario1_2' element={<Questionario1_2 />} />
-				<Route path='/Questionario1_3' element={<Questionario1_3 />} />
-				<Route path='/Questionario1_4' element={<Questionario1_4 />} />
-				<Route path='/Questionario1_5' element={<Questionario1_5 />} />
 
 				<Route path='/Questionario2_1' element={<Questionario2_1 />} />
 				<Route path='/Questionario2_2' element={<Questionario2_2 />} />
-				<Route path='/Questionario2_3' element={<Questionario2_3 />} />
-				<Route path='/Questionario2_4' element={<Questionario2_4 />} />
-				<Route path='/Questionario2_5' element={<Questionario2_5 />} />
 
 				<Route path='/Questionario3_1' element={<Questionario3_1 />} />
 				<Route path='/Questionario3_2' element={<Questionario3_2 />} />
 
 				<Route path='/Questionario4_1' element={<Questionario4_1 />} />
 				<Route path='/Questionario4_2' element={<Questionario4_2 />} />
-				<Route path='/Questionario4_3' element={<Questionario4_3 />} />
-				<Route path='/Questionario4_4' element={<Questionario4_4 />} />
-				<Route path='/Questionario4_5' element={<Questionario4_5 />} />
 
 				<Route path='/Questionario5_1' element={<Questionario5_1 />} />
 				<Route path='/Questionario5_2' element={<Questionario5_2 />} />
-				<Route path='/Questionario5_3' element={<Questionario5_3 />} />
-				<Route path='/Questionario5_4' element={<Questionario5_4 />} />
-				<Route path='/Questionario5_5' element={<Questionario5_5 />} />
 			</Routes>
 		</AnimatePresence>
 	);

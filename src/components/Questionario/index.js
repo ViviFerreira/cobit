@@ -10,14 +10,14 @@ function Questionario({ perguntas, up, down }) {
 	const questions = perguntas ?? [];
 	const [perguntaAtual, setPerguntaAtual] = useState(0);
 	const [showPontuacao, setShowPontuacao] = useState(false);
-	const [pontos, setPontos] = useState(0);
+	const [pontosAtuais, setPontosAtuais] = useState(0);
 	const { points, setPoints } = usePoints();
 
 	function proximaPergunta(correta) {
 		const nextQuestion = perguntaAtual + 1;
 
 		if (correta) {
-			setPontos(pontos + 1);
+			setPontosAtuais(pontosAtuais + 1);
 			setPoints(points + 1 )
 		}
 		if (nextQuestion < questions.length) {
@@ -37,14 +37,14 @@ function Questionario({ perguntas, up, down }) {
 				</div>
 				{showPontuacao ? (
 					<div className='pontuacao'>
-						{pontos > 0 ? (
+						{pontosAtuais > 0 ? (
 							<span>
-								Você conquistou + {pontos} <FaStar size={28} color='#142d64' /> nesse
+								Você conquistou + {pontosAtuais} <FaStar size={28} color='#142d64' /> nesse
 								módulo
 							</span>
 						) : (
 							<span>
-								{pontos} <FaStar size={28} color='#142d64' /> nesse módulo
+								{pontosAtuais} <FaStar size={28} color='#142d64' /> nesse módulo
 							</span>
 						)}
 					</div>
