@@ -28,7 +28,7 @@ function Questionario3_1() {
 						assunto apresentado...
 					</div>
 				</div>
-				<Pagination up='/Modulo3_8' down='/Modulo4' />
+				<Pagination up='/Modulo3_8' down='/Questionario3_2' />
 			</div>
 		</Layout>
 	);
