@@ -87,9 +87,6 @@ import Questionario5_3 from '../pages/Questionario5/Questionario5_3';
 import Questionario5_4 from '../pages/Questionario5/Questionario5_4';
 import Questionario5_5 from '../pages/Questionario5/Questionario5_5';
 
-import QuestionarioTeste from '../pages/QuestionarioTeste';
-
-
 import { AnimatePresence } from 'framer-motion';
 
 export default () => {
@@ -138,7 +135,7 @@ export default () => {
 				<Route path='/Modulo3_11' element={<Modulo3_11 />} />
 				<Route path='/Modulo3_12' element={<Modulo3_12 />} />
 				<Route path='/Modulo3_13' element={<Modulo3_13 />} />
-				
+
 				<Route path='/modulo4' element={<Modulo4 />} />
 				<Route path='/Modulo4_1' element={<Modulo4_1 />} />
 				<Route path='/Modulo4_2' element={<Modulo4_2 />} />
@@ -179,14 +176,12 @@ export default () => {
 				<Route path='/Questionario4_3' element={<Questionario4_3 />} />
 				<Route path='/Questionario4_4' element={<Questionario4_4 />} />
 				<Route path='/Questionario4_5' element={<Questionario4_5 />} />
-				
+
 				<Route path='/Questionario5_1' element={<Questionario5_1 />} />
 				<Route path='/Questionario5_2' element={<Questionario5_2 />} />
 				<Route path='/Questionario5_3' element={<Questionario5_3 />} />
 				<Route path='/Questionario5_4' element={<Questionario5_4 />} />
 				<Route path='/Questionario5_5' element={<Questionario5_5 />} />
-
-				<Route path='/QuestionarioTeste' element={<QuestionarioTeste />} />
 			</Routes>
 		</AnimatePresence>
 	);

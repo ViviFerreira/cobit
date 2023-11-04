@@ -1,66 +1,78 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { usePoints } from '../../providers/points';
 import Layout from '../Layout';
 import Pagination from '../Pagination';
 import TitleModulo from '../TitleModulo';
+import { FaStar } from 'react-icons/fa6';
 import './styles.css';
 
-function Questionario1_1({ title, q1, q2, q3, q4, up, down }) {
-	const { points, setPoints, correct, incorrect, setCorrect, setIncorrect } =
-		usePoints();
+function Questionario({ perguntas, up, down }) {
+	const questions = perguntas ?? [];
+	const [perguntaAtual, setPerguntaAtual] = useState(0);
+	const [showPontuacao, setShowPontuacao] = useState(false);
+	const [pontos, setPontos] = useState(0);
+	const { points, setPoints } = usePoints();
 
-	const setCor = (correta) => {
-		if (correta == 'True') {
-			setPoints(points + 1);
+	function proximaPergunta(correta) {
+		const nextQuestion = perguntaAtual + 1;
+
+		if (correta) {
+			setPontos(pontos + 1);
+			setPoints(points + 1 )
 		}
-		setCorrect('#B5F1CC');
-		setIncorrect('#F7A4A4');
-	};
+		if (nextQuestion < questions.length) {
+			setPerguntaAtual(nextQuestion);
+		} else {
+			setShowPontuacao(true);
+		}
+	}
 
 	return (
 		<Layout>
-			<div className='container'>
+			<div className='container-perguntas'>
 				<div>
 					<TitleModulo>
 						<span class='title-destaque'>QUESTIONÁRIO</span>
 					</TitleModulo>
 				</div>
-				<h4 className='title-questão'>{title}</h4>
-
-				<div className='container-questões'>
-					<div
-						className='questão'
-						style={{ backgroundColor: q1.correta == 'True' ? correct : incorrect }}
-						onClick={() => setCor(q1.correta)}
-					>
-						{q1.questao}
+				{showPontuacao ? (
+					<div className='pontuacao'>
+						{pontos > 0 ? (
+							<span>
+								Você conquistou + {pontos} <FaStar size={28} color='#142d64' /> nesse
+								módulo
+							</span>
+						) : (
+							<span>
+								{pontos} <FaStar size={28} color='#142d64' /> nesse módulo
+							</span>
+						)}
 					</div>
-					<div
-						className='questão'
-						style={{ backgroundColor: q2.correta == 'True' ? correct : incorrect }}
-						onClick={() => setCor(q2.correta)}
-					>
-						{q2.questao}
-					</div>
-
-					<div
-						className='questão'
-						style={{ backgroundColor: q3.correta == 'True' ? correct : incorrect }}
-						onClick={() => setCor(q3.correta)}
-					>
-						{q3.questao}
-					</div>
-					<div
-						className='questão'
-						style={{ backgroundColor: q4.correta == 'True' ? correct : incorrect }}
-						onClick={() => setCor(q4.correta)}
-					>
-						{q4.questao}
-					</div>
-				</div>
-				<Pagination up={up} down={down} />
+				) : (
+					<>
+						<div className='infoPerguntas'>
+							<div className='contagemPerguntas'>
+								<span>
+									Pergunta {perguntaAtual + 1}/{questions.length}
+								</span>
+							</div>
+							<div className='pergunta'>{questions[perguntaAtual].pergunta}</div>
+						</div>
+						<div className='container-questões'>
+							{questions[perguntaAtual].opcoesResposta.map((opcoesResposta) => (
+								<div
+									className='questão'
+									onClick={() => proximaPergunta(opcoesResposta.correta)}
+								>
+									{opcoesResposta.resposta}
+								</div>
+							))}
+						</div>
+					</>
+				)}
+				{showPontuacao ? <Pagination up={up} down={down} /> : null}
 			</div>
 		</Layout>
 	);
 }
-export default Questionario1_1;
+export default Questionario;
