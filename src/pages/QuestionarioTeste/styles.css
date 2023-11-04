@@ -1,0 +1,60 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.quest1{
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contentQuest1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+
+.answers{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    text-align: start;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--color-red);
+    color: black;
+}
+
+button:hover{
+    background-color:aqua;
+    color: white;
+}
+
+
+
+.finish{
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.finish button{
+    text-align: center;
+}
