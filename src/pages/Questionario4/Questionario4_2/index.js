@@ -1,31 +1,29 @@
 import React from 'react';
-import Layout from '../../../components/Layout';
-import Pagination from '../../../components/Pagination';
-import TitleModulo from '../../../components/TitleModulo';
-import './styles.css';
+import Questionario from '../../../components/Questionario';
 
 function Questionario4_2() {
 	return (
-		<Layout>
-			<div className='container'>
-				<div>
-					<TitleModulo>
-						<span class='title-destaque'>QUESTIONÁRIO</span>
-					</TitleModulo>
-				</div>
-				<h4 className='title-questão'>
-					1. O que significa a sigla "CPM" no COBIT?
-				</h4>
-
-				<div className='container-questões'>
-					<div className='questão'>Centralized Process Management.</div>
-					<div className='questão correct'>Cobit Process Model.</div>
-					<div className='questão'>Certified Project Manager.</div>
-					<div className='questão'>Corporate Process Mapping.</div>
-				</div>
-				<Pagination up='/Questionario4_1' down='/Questionario4_3' />
-			</div>
-		</Layout>
+		<Questionario
+			title='1. O que significa a sigla "CPM" no COBIT?'
+			q1={{
+				questao: ' Centralized Process Management.',
+				correta: 'False',
+			}}
+			q2={{
+				questao: 'Cobit Process Model.',
+				correta: 'True',
+			}}
+			q3={{
+				questao: 'Certified Project Manager.',
+				correta: 'False',
+			}}
+			q4={{
+				questao: ' Corporate Process Mapping.',
+				correta: 'False',
+			}}
+			up='/Questionario4_1'
+			down='/Questionario4_3'
+		/>
 	);
 }
 export default Questionario4_2;

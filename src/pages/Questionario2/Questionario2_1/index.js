@@ -4,7 +4,6 @@ import introQuest1_1 from '../../../assets/img/introQuest1_1.png';
 import Pagination from '../../../components/Pagination';
 import TitleModulo from '../../../components/TitleModulo';
 import SubTitleModulo from '../../../components/SubTitleModulo';
-import './styles.css';
 
 function Questionario1_1() {
 	return (

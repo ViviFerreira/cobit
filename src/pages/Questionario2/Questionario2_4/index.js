@@ -1,36 +1,31 @@
 import React from 'react';
-import Layout from '../../../components/Layout';
-import Pagination from '../../../components/Pagination';
-import TitleModulo from '../../../components/TitleModulo';
+import Questionario from '../../../components/Questionario';
 
-function Questionario1_1() {
+function Questionario2_4() {
 	return (
-		<Layout>
-			<div className='container'>
-				<div>
-					<TitleModulo>
-						<span class='title-destaque'>QUESTIONÁRIO</span>
-					</TitleModulo>
-				</div>
-				<h4 className='title-questão'>
-					3. Por que o COBIT 2019 enfatiza que um framework de governança deve ser
-					flexível e aberto?
-				</h4>
-
-				<div className='container-questões'>
-					<div className='questão'>
-						Para aumentar a complexidade e rigidez do processo de governança.
-					</div>
-					<div className='questão correct '>
-						Para diminuir os riscos, como perda de tempo e custos não previstos.
-					</div>
-
-					<div className='questão'>Para impor regras estritas nas organizações.</div>
-					<div className='questão'>Para tornar a governança menos acessível.</div>
-				</div>
-				<Pagination up='/Questionario2_3' down='/Questionario2_5' />
-			</div>
-		</Layout>
+		<Questionario
+			title='3. Por que o COBIT 2019 enfatiza que um framework de governança deve ser flexível e aberto?'
+			q1={{
+				questao:
+					'Para aumentar a complexidade e rigidez do processo de governança.',
+				correta: 'False',
+			}}
+			q2={{
+				questao:
+					'Para diminuir os riscos, como perda de tempo e custos não previstos.',
+				correta: 'True',
+			}}
+			q3={{
+				questao: 'Para impor regras estritas nas organizações.',
+				correta: 'False',
+			}}
+			q4={{
+				questao: 'Para tornar a governança menos acessível.',
+				correta: 'False',
+			}}
+			up='/Questionario2_3'
+			down='/Questionario2_5'
+		/>
 	);
 }
-export default Questionario1_1;
+export default Questionario2_4;
