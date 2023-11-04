@@ -1,10 +1,11 @@
 import React from 'react';
+import { usePoints } from '../../../providers/points';
 import Layout from '../../../components/Layout';
 import Pagination from '../../../components/Pagination';
 import TitleModulo from '../../../components/TitleModulo';
 
-
-function Questionario5_5() {
+function Questionario5_4() {
+	const { points, setPoints } = usePoints();
 	return (
 		<Layout>
 			<div className='container'>
@@ -14,18 +15,35 @@ function Questionario5_5() {
 					</TitleModulo>
 				</div>
 				<h4 className='title-questão'>
-					4. Qual é a função do COBIT 2019 na otimização de riscos e recursos relacionados à TI?
+					3. Além do departamento de TI, em que outros setores o COBIT 2019 é
+					flexível e aplicável?
 				</h4>
 
 				<div className='container-questões'>
-					<div className='questão'>O COBIT 2019 só lida com riscos relacionados a hardware, ignorando completamente os riscos de software e segurança cibernética, o que resulta em uma gestão inadequada dos recursos de TI.</div>
-					<div className='questão'>O COBIT 2019 aumenta os riscos associados à TI, tornando a gestão de recursos mais complexa e impactando negativamente os negócios.</div>
-					<div className='questão'>O COBIT 2019 não tem impacto na otimização de riscos e recursos; sua principal função é apenas fornecer diretrizes para a gestão básica de TI, sem considerar riscos ou eficiência de recursos.</div>
-					<div className='questão correct'> O COBIT 2019 auxilia na otimização de riscos e recursos ao abordar os riscos de negócios associados à TI, garantindo uma gestão eficiente dos recursos e riscos, o que, por sua vez, afeta positivamente os negócios como um todo.</div>
+					<div className='questão'>
+						O COBIT 2019 é estritamente limitado ao departamento de TI e não pode ser
+						aplicado em nenhum outro setor ou departamento da organização.
+					</div>
+					<div className='questão correct' onClick={() => setPoints(points + 1)}>
+						O COBIT 2019 é versátil e pode ser aplicado em vários setores, não se
+						limitando ao departamento de TI. Sua flexibilidade permite a integração
+						com padrões, diretrizes e leis, adaptando-se às necessidades específicas
+						de diferentes segmentos de negócios.
+					</div>
+					<div className='questão'>
+						{' '}
+						O COBIT 2019 é apenas aplicável a indústrias relacionadas à produção de
+						software e não tem relevância em setores como saúde, educação ou finanças.
+					</div>
+					<div className='questão'>
+						Embora o COBIT 2019 seja flexível, ele só pode ser aplicado em pequenas
+						empresas e não é adequado para organizações de grande porte ou
+						multinacionais.
+					</div>
 				</div>
 				<Pagination up='/Questionario5_3' down='/Questionario5_5' />
 			</div>
 		</Layout>
 	);
 }
-export default Questionario5_5;
+export default Questionario5_4;

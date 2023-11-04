@@ -1,12 +1,14 @@
 import React from 'react';
+import { usePoints } from '../../../../providers/points';
 import './styles.css';
-
 import { FaMap } from 'react-icons/fa6';
 import { FaTrophy } from 'react-icons/fa6';
 import { FaStar } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
 function Header() {
+	const { points } = usePoints();
+
 	return (
 		<header className='navBar'>
 			<Link to="/" className='navTitle'>
@@ -25,6 +27,7 @@ function Header() {
 				</div>
 				<div className='icon-3'>
 					<FaStar size={30} color='#FFFFFF' />
+					<span className='points'>{points}</span>
 				</div>
 			</div>
 		</header>
