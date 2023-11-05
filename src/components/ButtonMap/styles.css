@@ -12,14 +12,14 @@ button {
   color: #ecf0f1;
   text-decoration: none;
   border-radius: 50%;
-  border: solid 1px #f39c12;
-  background: #e67e22;
+  border: solid 1px #435585;
+  background: #435585;
   text-align: center;
-  padding: 16px 18px 14px;
+  padding: 23px;
   margin: 12px;
   transition: all 0.1s;
-  box-shadow: 0px 6px 0px #d35400;
-  height: 70px;
+  box-shadow: 0px 6px 0px #071952;
+  height: 75px;
   display: flex ;
   justify-content: center;
   align-items: center;
@@ -28,21 +28,22 @@ button {
   -moz-transition: all 0.1s;
   transition: all 0.1s;
     
-  -webkit-box-shadow: 0px 6px 0px #d35400;
-  -moz-box-shadow: 0px 6px 0px #d35400;
-  box-shadow: 0px 6px 0px #d35400;
+  -webkit-box-shadow: 0px 6px 0px #071952;
+  -moz-box-shadow: 0px 6px 0px #071952;
+  box-shadow: 0px 6px 0px #071952;
 }
 
 button:active{
-  -webkit-box-shadow: 0px 2px 0px #d35400;
-  -moz-box-shadow: 0px 2px 0px #d35400;
-  box-shadow: 0px 2px 0px #d35400;
+  -webkit-box-shadow: 0px 2px 0px #071952;
+  -moz-box-shadow: 0px 2px 0px #071952;
+  box-shadow: 0px 2px 0px #071952;
   position:relative;
   top:4px;
 }
 
 button:hover{
-  background-color: #fa6400;
+  cursor: pointer;
+  transform: scale(1.1);;
 }
 
 .ButtonMap.disabled {
@@ -52,4 +53,3 @@ button:hover{
   border: solid 1px gray;
   box-shadow: 0px 6px 0px #ccc;
 }
-

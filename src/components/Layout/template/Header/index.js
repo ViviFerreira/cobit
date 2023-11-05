@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePoints } from '../../../../providers/points';
+import { useAplication } from '../../../../providers/points';
 import './styles.css';
 import { FaMap } from 'react-icons/fa6';
 import { FaTrophy } from 'react-icons/fa6';
@@ -7,11 +7,11 @@ import { FaStar } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
 function Header() {
-	const { points } = usePoints();
+	const { points } = useAplication();
 
 	return (
 		<header className='navBar'>
-			<Link to="/" className='navTitle'>
+			<Link to='/' className='navTitle'>
 				<h1 title='Logo da equipe desenvolvedora'>
 					C<span className='logo-cobit'>O</span>BITDynamiX
 				</h1>
