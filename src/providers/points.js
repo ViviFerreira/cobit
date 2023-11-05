@@ -4,12 +4,29 @@ export const PointsContext = React.createContext({});
 
 export const PointsProvider = (props) => {
 	const [points, setPoints] = useState(0);
+	const [modulosDesbloqueados, setModulosDesbloqueados] = useState([
+		true,
+		false,
+		false,
+		false,
+		false,
+	]);
+	const [completeQuestions, setCompleteQuestions] = useState([
+		false,
+		false,
+		false,
+		false,
+	]);
 
 	return (
 		<PointsContext.Provider
 			value={{
 				points,
 				setPoints,
+				completeQuestions,
+				setCompleteQuestions,
+				modulosDesbloqueados,
+				setModulosDesbloqueados,
 			}}
 		>
 			{props.children}
@@ -17,4 +34,4 @@ export const PointsProvider = (props) => {
 	);
 };
 
-export const usePoints = () => React.useContext(PointsContext);
+export const useAplication = () => React.useContext(PointsContext);

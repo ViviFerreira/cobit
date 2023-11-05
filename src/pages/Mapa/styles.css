@@ -1,11 +1,8 @@
-.cardBackground{
+.container-mapa{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
     width: 100%;
-    margin-left: 55px;
-    height: 75vh;
-    border-radius: 20px;
-    
+    height: 100%;
+    background-image: url('../../assets/img/fundo-mapa2.jpg');
+    background-size: 100%;
 }
