@@ -1,8 +1,12 @@
 import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import Login from '../pages/login/Login';
+import Cadastro from '../pages/login/Cadastro';
 import Home from '../pages/Home';
 import PageError from '../pages/PageError';
 import Mapa from '../pages/Mapa';
+
+
 import Modulo1 from '../pages/Modulo1';
 import Modulo1_1 from '../pages/Modulo1/Modulo1_1';
 import Modulo1_2 from '../pages/Modulo1/Modulo1_2';
@@ -86,9 +90,11 @@ export default () => {
 	return (
 		<AnimatePresence mode='wait'>
 			<Routes location={location} key={location.pathname}>
-				<Route path='/' element={<Home />} />
-				<Route path='*' element={<PageError />} />
+				<Route path='/' element={<Login />} /> 
+				<Route path='/Home' element={<Home />} /> 
+				<Route path='/Cadastro' element={<Cadastro />} /> 
 				<Route path='/mapa' element={<Mapa />} />
+				<Route path='*' element={<PageError />} />
 
 				<Route path='/modulo1' element={<Modulo1 />} />
 				<Route path='/modulo1_1' element={<Modulo1_1 />} />

@@ -60,11 +60,7 @@ function Mapa() {
 							position={{ top: '10%', left: '15%' }}
 							isClickable={verificarDesbloqueio(0)}
 							onClick={() => {
-								console.log(verificarDesbloqueio(0));
-								console.log(verificarDesbloqueio(1));
-								console.log(verificarDesbloqueio(2));
-								console.log(verificarDesbloqueio(3));
-								console.log(verificarDesbloqueio(4));
+							
 							}}
 						/>
 					</Link>
