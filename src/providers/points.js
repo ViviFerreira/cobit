@@ -16,6 +16,7 @@ export const PointsProvider = (props) => {
 		false,
 		false,
 		false,
+		false,
 	]);
 
 	return (

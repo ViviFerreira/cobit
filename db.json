@@ -1,16 +1,28 @@
 {
   "points": [
-      {
-          "id": 1,
-          "nome": "Viviane",
-          "start-questions1": 0,
-          "start-questions2": 0,
-          "start-questions3": 0,
-          "start-questions4": 0,
-          "start-questions5": 0,
-          "total-stars": 0,
-          "trophies": 0,
-          "current-module": 1
-      }
+    {
+      "id": 1,
+      "name": "Viviane",
+      "pointsQuestions": 8,
+      "pointsQuestions2": 0,
+      "pointsQuestions3": 0,
+      "pointsQuestions4": 0,
+      "pointsQuestions5": 0,
+      "trophies": 0,
+      "unlockedModules": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "completeQuestions": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    }
   ]
 }

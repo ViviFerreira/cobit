@@ -7,7 +7,14 @@ import { FaStar } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
 function Header() {
-	const { points } = useAplication();
+	const { points, completeQuestions } = useAplication();
+	let trophies = 0;
+
+	for (let i = 0; i < completeQuestions.length; i++) {
+		if (completeQuestions[i] == true) {
+			trophies += 1;
+		}
+	}
 
 	return (
 		<header className='navBar'>
@@ -24,6 +31,7 @@ function Header() {
 				</div>
 				<div className='icon-2'>
 					<FaTrophy size={30} color='#FFFFFF' />
+					<span className='points'>{trophies}</span>
 				</div>
 				<div className='icon-3'>
 					<FaStar size={30} color='#FFFFFF' />
