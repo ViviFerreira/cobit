@@ -38,7 +38,7 @@ function Mapa() {
 		}
 
 		setModulosDesbloqueados(arrayModulos);
-	}, [completeQuestions, modulosDesbloqueados]);
+	}, [completeQuestions]);
 
 	return (
 		<Layout>

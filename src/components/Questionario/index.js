@@ -8,82 +8,51 @@ import './styles.css';
 import { buscar, editar } from '../../api';
 
 function Questionario({ perguntas, up, down, indice }) {
-	const [dados, setDados] = useState({});
-	const [pontosAtuais, setPontosAtuais] = useState(0);
+	const {
+		dados,
+		points,
+		setPoints,
+		completeQuestions,
+		setCompleteQuestions,
+		loading,
+	} = useAplication();
+
 	const questions = perguntas ?? [];
 	const [perguntaAtual, setPerguntaAtual] = useState(0);
 	const [showPontuacao, setShowPontuacao] = useState(false);
-
-	const { points, setPoints, completeQuestions, setCompleteQuestions } =
-		useAplication();
-	const [loading, setLoading] = useState(true);
-
-	useEffect(() => {
-		async function fetchData() {
-			try {
-				const data = await buscar('http://127.0.0.1:3001/points/1/');
-				setDados(data);
-
-				const key = `pointsQuestions${indice}`;
-				const pontos = data[key];
-				setPontosAtuais(pontos);
-				setLoading(false);
-			} catch (error) {
-				console.error(error);
-				setLoading(false);
-			}
-		}
-
-		fetchData();
-	}, [indice]);
-
-	function isEmptyObject(obj) {
-		return Object.keys(obj).length === 0;
-	}
-
-	function setNewPoint(indice) {
-		if (indice >= 1 && indice <= 5) {
-			const key = `pointsQuestions${indice}`;
-			if (!isEmptyObject(dados)) {
-				let dadosBanco = { ...dados };
-				dadosBanco[key] = pontosAtuais;
-				editar(dadosBanco, 1);
-			}
-		}
-		return 0;
-	}
-
-	useEffect(() => {
-		setNewPoint(indice);
-	}, [indice, pontosAtuais]);
+	const [pontosAtuais, setPontosAtuais] = useState(0);
 
 	if (loading) {
 		return <div>Carregando...</div>;
 	}
 
-	function proximaPergunta(correta) {
-		const nextQuestion = perguntaAtual + 1;
-
-		if (correta && !completeQuestions[indice - 1]) {
-			setPontosAtuais(pontosAtuais + 1);
-			setPoints(points + 1);
-		}
-		if (nextQuestion < questions.length) {
-			setPerguntaAtual(nextQuestion);
-		} else {
-			let arrayQuestions = completeQuestions;
-			arrayQuestions[indice - 1] = true;
-			setCompleteQuestions(arrayQuestions);
-			setShowPontuacao(true);
-		}
+	function salvarDados() {
+		let dadosBanco = { ...dados };
+		dadosBanco.pointsQuestions[indice] = pontosAtuais + 1;
+		dadosBanco.completeQuestions[indice] = true;
+		editar(dadosBanco, 1);
+		return 0;
 	}
 
-	function getPointsQuestions() {
-		if (indice >= 1 && indice <= 5) {
-			const key = `pointsQuestions${indice}`;
-			return dados[key];
+	function proximaPergunta(correta) {
+		if (!completeQuestions[indice]) {
+			const nextQuestion = perguntaAtual + 1;
+
+			if (correta) {
+				setPontosAtuais(pontosAtuais + 1);
+				setPoints(points + 1);
+			}
+			if (nextQuestion < questions.length) {
+				setPerguntaAtual(nextQuestion);
+			} else {
+				setPontosAtuais(pontosAtuais + 1);
+				let arrayQuestions = completeQuestions;
+				arrayQuestions[indice] = true;
+				setCompleteQuestions(arrayQuestions);
+				setShowPontuacao(true);
+				salvarDados();
+			}
 		}
-		return 0;
 	}
 
 	return (
@@ -98,7 +67,7 @@ function Questionario({ perguntas, up, down, indice }) {
 					<div className='pontuacao'>
 						{pontosAtuais > 0 ? (
 							<span>
-								Você conquistou + {getPointsQuestions()}
+								Você conquistou + {pontosAtuais}
 								<FaStar size={28} color='#142d64' /> nesse módulo
 							</span>
 						) : (
@@ -121,7 +90,7 @@ function Questionario({ perguntas, up, down, indice }) {
 							{questions[perguntaAtual].opcoesResposta.map((opcoesResposta) => (
 								<div
 									className={`questão ${
-										completeQuestions[indice - 1] == true ? 'completed' : ''
+										completeQuestions[indice] == true ? 'completed' : ''
 									}`}
 									onClick={() => proximaPergunta(opcoesResposta.correta)}
 								>
@@ -130,7 +99,7 @@ function Questionario({ perguntas, up, down, indice }) {
 							))}
 						</div>
 
-						{completeQuestions[indice - 1] === true ? (
+						{completeQuestions[indice] === true ? (
 							<div className='alert'>
 								<span>Você já respondeu a este questionário</span>
 							</div>
