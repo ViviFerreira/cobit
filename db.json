@@ -3,12 +3,13 @@
     {
       "id": 1,
       "name": "Viviane",
-      "pointsQuestions": 8,
-      "pointsQuestions2": 0,
-      "pointsQuestions3": 0,
-      "pointsQuestions4": 0,
-      "pointsQuestions5": 0,
-      "trophies": 0,
+      "pointsQuestions": [
+        4,
+        3,
+        4,
+        4,
+        4
+      ],
       "unlockedModules": [
         true,
         false,
@@ -17,11 +18,11 @@
         false
       ],
       "completeQuestions": [
-        false,
-        false,
-        false,
-        false,
-        false
+        true,
+        true,
+        true,
+        true,
+        true
       ]
     }
   ]
