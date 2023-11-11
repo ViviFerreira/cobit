@@ -5,6 +5,7 @@ import Cadastro from '../pages/login/Cadastro';
 import Home from '../pages/Home';
 import PageError from '../pages/PageError';
 import Mapa from '../pages/Mapa';
+import Rank from '../pages/Rank';
 
 
 import Modulo1 from '../pages/Modulo1';
@@ -93,7 +94,8 @@ export default () => {
 				<Route path='/' element={<Login />} /> 
 				<Route path='/Home' element={<Home />} /> 
 				<Route path='/Cadastro' element={<Cadastro />} /> 
-				<Route path='/mapa' element={<Mapa />} />
+				<Route path='/Mapa' element={<Mapa />} />
+				<Route path='/Rank' element={<Rank />} />
 				<Route path='*' element={<PageError />} />
 
 				<Route path='/modulo1' element={<Modulo1 />} />

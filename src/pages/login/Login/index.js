@@ -18,9 +18,11 @@ function Login() {
 	const navigate = useNavigate();
 
 	function processarLogin({ user, password }) {
-		if (alldados.length > 0) {
+		console.log(alldados)
+		if (alldados > 0) {
+			
 			const currentUser = alldados.filter(
-				(usuario) => usuario.usuario == user && usuario.senha == password
+				(usuario) => usuario.usuario === user && usuario.senha === password
 			);
 			if (currentUser.length > 0) {
 				return { token: true };
