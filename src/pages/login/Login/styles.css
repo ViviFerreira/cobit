@@ -1,3 +1,11 @@
+.contentLogin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
 .backgroundLogin {
 	display: flex;
 	flex-direction: column;
@@ -6,14 +14,6 @@
 	border: ridge 2px;
 	width: 30%;
 	height: 400px;
-}
-
-.contentLogin {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
 }
 
 .titleLogin {
@@ -78,6 +78,12 @@
 	align-items: center;
 }
 
+.textRegisterLogin a {
+	color: var(--color-blue);
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
 .btnLogin {
 	display: flex;
 	justify-content: center;
@@ -90,7 +96,8 @@
 	border: 0;
 	padding: 15px;
 	color: #ffffff;
-	font-size: 14px;
+	font-size: 2rem;
+	margin-top: 1rem;
 	-webkit-transition: all 0.3 ease;
 	transition: all 0.3 ease;
 	cursor: pointer;
@@ -100,4 +107,15 @@
 .form .btnLoginHover:active,
 .form .btnLoginHover:focus {
 	background: #172e7a;
+}
+
+.alert-error {
+	width: 30%;
+	padding: 10px;
+	margin-left: 5rem;
+	background-color: var(--color-red);
+	color: var(--color-white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

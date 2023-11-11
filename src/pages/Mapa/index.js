@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Layout from '../../components/Layout';
 import ButtonMap from '../../components/ButtonMap';
 import { useAplication } from '../../providers/points';
+import { useLogin } from '../../Store/Provider';
 import { Link } from 'react-router-dom';
 import './styles.css';
 
@@ -17,6 +19,8 @@ import { motion } from 'framer-motion';
 function Mapa() {
 	const { completeQuestions, modulosDesbloqueados, setModulosDesbloqueados } =
 		useAplication();
+	const { idUsuario } = useLogin();
+	const navigate = useNavigate();
 
 	const slideInFromRight = {
 		initial: { x: '100%', opacity: 0 },
@@ -40,6 +44,12 @@ function Mapa() {
 		setModulosDesbloqueados(arrayModulos);
 	}, [completeQuestions]);
 
+	useEffect(() => {
+		if (idUsuario == 0) {
+			navigate('/');
+		}
+	}, []);
+
 	return (
 		<Layout>
 			<motion.div
@@ -59,9 +69,7 @@ function Mapa() {
 							icon={<BsFill1CircleFill size={40} color='#FFFFFF' />}
 							position={{ top: '10%', left: '15%' }}
 							isClickable={verificarDesbloqueio(0)}
-							onClick={() => {
-							
-							}}
+							onClick={() => {}}
 						/>
 					</Link>
 

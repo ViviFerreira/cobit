@@ -3,9 +3,11 @@ import Layout from '../../../components/Layout';
 import { Link } from 'react-router-dom';
 import './styles.css';
 import { cadastrar } from '../../../api';
+import { useLogin } from '../../../Store/Provider';
 
 function Cadastro() {
 	const [showAlert, setShowAlert] = useState(false);
+	const { alldados, setNovaBusca } = useLogin();
 
 	const [form, setForm] = useState({
 		empresa: '',
@@ -29,8 +31,9 @@ function Cadastro() {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		cadastrar(form);
-
+		setNovaBusca(true);
 		setForm({
+			...form,
 			empresa: '',
 			setor: '',
 			usuario: '',
@@ -99,10 +102,10 @@ function Cadastro() {
 						</span>
 					</div>
 					<div className='btnLogin'>
-						<input className='btnLoginHover' type='submit'></input>
+						<input className='btnLoginHover' type='submit' value='Cadastrar'></input>
 					</div>
 				</form>
-				{showAlert && <div className='alert-sucess'>Cadastrado com sucesso</div>}
+				{showAlert && <div className='alert-success'>Cadastrado com sucesso</div>}
 			</div>
 		</Layout>
 	);
