@@ -137,6 +137,7 @@ function Cadastro() {
             <div>
               <input
                 type='checkbox'
+                className='checkPolitica'
                 id='politica'
                 checked={politicaPrivacidadeAceita}
                 onChange={handleChange}
