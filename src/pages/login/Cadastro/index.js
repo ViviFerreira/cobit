@@ -158,7 +158,8 @@ function Cadastro() {
         </form>
         {error && (
           <div className='alert-error'>Erro! Esse usuário já existe</div>
-        )}
+          )}
+  
         {showMsg && (
           <div className='alert-success'>Usuário cadastrado com sucesso</div>
         )}
