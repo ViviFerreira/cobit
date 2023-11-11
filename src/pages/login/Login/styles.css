@@ -1,102 +1,103 @@
-.backgroundLogin{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #fff;
-    border: ridge 2px;
-    width: 30%;
-    height: 400px;
+.backgroundLogin {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #fff;
+	border: ridge 2px;
+	width: 30%;
+	height: 400px;
 }
 
-.contentLogin{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+.contentLogin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
 }
 
-.titleLogin{
-    display: flex;
-    width: 60%;
-    justify-content: start;
-    align-self: center;
+.titleLogin {
+	display: flex;
+	width: 60%;
+	justify-content: start;
+	align-self: center;
 }
 
-.inputsBtnLogin{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.inputsBtnLogin {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.inputsBtnLogin{
-    display: flex;
-    align-items: center;
+.inputsBtnLogin {
+	display: flex;
+	align-items: center;
 }
 
-.inputs{
-    margin-top: 30px;
-    width: 60%;
-    display: flex;
-    flex-direction: column;  
+.inputs {
+	margin-top: 30px;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
 }
 
-.inputs input{
-    padding-left: 10px ;
+.inputs input {
+	padding-left: 10px;
 }
 
-.inputs .setor{
-    border: 1px ridge red;
-    height: 40px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px; 
+.inputs .setor {
+	border: 1px ridge red;
+	height: 40px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
-.inputs input[type="email"]{
-    border: 1px ridge ;
-    height: 40px;
+.inputs input[type='email'] {
+	border: 1px ridge;
+	height: 40px;
 }
 
-.inputs input[type="email"]:focus,
-.inputs input[type="password"]:focus{
-    outline: none;
+.inputs input[type='email']:focus,
+.inputs input[type='password']:focus {
+	outline: none;
 }
 
-.inputs input[type="password"]{
-    border: 1px ridge ;
-    height: 40px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+.inputs input[type='password'] {
+	border: 1px ridge;
+	height: 40px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 
-.textRegister{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    margin-bottom: 10px;
+.textRegisterLogin {
+	display: flex;
+	width: 70%;
+	margin: 0 auto;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	align-items: center;
 }
 
-.btnLogin{
-    display: flex;
-    justify-content: center;
+.btnLogin {
+	display: flex;
+	justify-content: center;
 }
 
-.btnLogin input{
-    outline: 0;
-    background: #071952;
-    width: 350px;
-    border: 0;
-    padding: 15px;
-    color: #FFFFFF;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
-
+.btnLogin input {
+	outline: 0;
+	background: #071952;
+	width: 350px;
+	border: 0;
+	padding: 15px;
+	color: #ffffff;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
 }
 
-.btnLoginHover:hover,.form .btnLoginHover:active,.form .btnLoginHover:focus {
-    background: #172e7a;
+.btnLoginHover:hover,
+.form .btnLoginHover:active,
+.form .btnLoginHover:focus {
+	background: #172e7a;
 }

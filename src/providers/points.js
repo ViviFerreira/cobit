@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { buscar } from '../api';
+
 export const PointsContext = React.createContext({});
 
 export const PointsProvider = (props) => {
@@ -33,7 +34,6 @@ export const PointsProvider = (props) => {
 				console.error(error);
 			}
 		}
-
 		fetchData();
 	}, []);
 

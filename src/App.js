@@ -1,13 +1,16 @@
 import { BrowserRouter } from 'react-router-dom';
 import Routes from './Routes';
-import StoreProvider from './Store/Provider';
+import { LoginProvider } from './Store/Provider';
+import { PointsProvider } from './providers/points';
 
 function App() {
 	return (
 		<BrowserRouter>
-			<StoreProvider>
-				<Routes />
-			</StoreProvider>
+			<LoginProvider>
+				<PointsProvider>
+					<Routes />
+				</PointsProvider>
+			</LoginProvider>
 		</BrowserRouter>
 	);
 }
