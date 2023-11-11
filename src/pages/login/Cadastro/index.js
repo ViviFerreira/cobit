@@ -6,7 +6,8 @@ import { cadastrar } from '../../../api';
 import { useLogin } from '../../../Store/Provider';
 
 function Cadastro() {
-	const [showAlert, setShowAlert] = useState(false);
+	const [error, setError] = useState(false);
+	const [showMsg, setShowMsg] = useState(false);
 	const { alldados, setNovaBusca } = useLogin();
 
 	const [form, setForm] = useState({
@@ -28,10 +29,30 @@ function Cadastro() {
 		});
 	};
 
+	function validarCadastro({ usuario }) {
+		if (alldados.length > 0) {
+			const currentUser = alldados.find((user) => user.usuario == usuario);
+			console.log(currentUser);
+			if (currentUser) {
+				return false;
+			} else {
+				return true;
+			}
+		} else {
+			return true;
+		}
+	}
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		cadastrar(form);
-		setNovaBusca(true);
+		if (validarCadastro(form)) {
+			cadastrar(form);
+			setNovaBusca(true);
+			setShowMsg(true);
+		} else {
+			setError(true);
+		}
+
 		setForm({
 			...form,
 			empresa: '',
@@ -40,10 +61,10 @@ function Cadastro() {
 			email: '',
 			senha: '',
 		});
-		setShowAlert(true);
 
 		setTimeout(() => {
-			setShowAlert(false);
+			setShowMsg(false);
+			setError(false);
 		}, 5000);
 	};
 
@@ -105,7 +126,10 @@ function Cadastro() {
 						<input className='btnLoginHover' type='submit' value='Cadastrar'></input>
 					</div>
 				</form>
-				{showAlert && <div className='alert-success'>Cadastrado com sucesso</div>}
+				{error && <div className='alert-error'>Erro! Esse usuário já existe</div>}
+				{showMsg && (
+					<div className='alert-success'>Usuário cadastrado com sucesso</div>
+				)}
 			</div>
 		</Layout>
 	);
