@@ -6,6 +6,7 @@ import Home from '../pages/Home';
 import PageError from '../pages/PageError';
 import Mapa from '../pages/Mapa';
 import Rank from '../pages/Rank';
+import Privacidade from '../pages/Privacidade';
 
 
 import Modulo1 from '../pages/Modulo1';
@@ -96,6 +97,7 @@ export default () => {
 				<Route path='/Cadastro' element={<Cadastro />} /> 
 				<Route path='/Mapa' element={<Mapa />} />
 				<Route path='/Rank' element={<Rank />} />
+				<Route path='/Privacidade' element={<Privacidade />} />
 				<Route path='*' element={<PageError />} />
 
 				<Route path='/modulo1' element={<Modulo1 />} />

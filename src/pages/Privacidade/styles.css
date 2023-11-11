@@ -1,0 +1,58 @@
+.row{
+    display: flex;
+    margin: 10px;
+}
+
+.column1 {
+    float: left;
+    width: 49%;
+    height: 100%;
+    padding: 10px;
+}
+
+.column2{
+    border-left: 1px double  ;
+    width: 0.1%;
+}
+
+.column3{
+    float: left;
+    width: 49%;
+    height: 100%;
+    padding: 10px;
+}
+   
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.politicaPrivacidade{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.TitlePrivacidade{
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.textContentPrivadidade{
+ margin-bottom: 10px;
+ text-align: justify;
+}
+
+.listInfoColetadas{
+    margin-left: 30px;
+}
+
+.itensList{
+    margin-bottom: 10px;
+}
+
+.negrito{
+    font-weight: bold;
+}
