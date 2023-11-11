@@ -4,8 +4,9 @@ import { buscar } from '../api';
 export const LoginContext = createContext({});
 
 export const LoginProvider = ({ children }) => {
-	const [id, setId] = useState();
 	const [alldados, setAllDados] = useState([]);
+	const [idUsuario, setIdUsuario] = useState(0);
+	const [novaBusca, setNovaBusca] = useState(false);
 
 	useEffect(() => {
 		async function fetchData() {
@@ -17,15 +18,16 @@ export const LoginProvider = ({ children }) => {
 			}
 		}
 		fetchData();
-	}, []);
+	}, [novaBusca]);
 
 	return (
 		<LoginContext.Provider
 			value={{
-				id,
-				setId,
 				alldados,
 				setAllDados,
+				idUsuario,
+				setIdUsuario,
+				setNovaBusca,
 			}}
 		>
 			{children}
