@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { LoginContext } from '../../../Store/Provider';
 import { useLogin } from '../../../Store/Provider';
 import Layout from '../../../components/Layout';
 import './styles.css';
@@ -12,23 +11,28 @@ function initialState() {
 
 function Login() {
 	const [values, setValues] = useState(initialState);
-	const [error, setError] = useState(null);
-	const { setToken } = useContext(LoginContext);
-	const { alldados, setId } = useLogin();
+	const [error, setError] = useState(false);
+	const { alldados, setIdUsuario } = useLogin();
 	const navigate = useNavigate();
 
 	function processarLogin({ user, password }) {
-		console.log(alldados)
-		if (alldados > 0) {
-			
-			const currentUser = alldados.filter(
+
+		if (alldados.length > 0) {
+			const currentUser = alldados.find(
 				(usuario) => usuario.usuario === user && usuario.senha === password
 			);
-			if (currentUser.length > 0) {
-				return { token: true };
+			if (currentUser) {
+				let idUsuario = { id: currentUser.id };
+				//Salvar usuário
+				localStorage.setItem('idUsuario', JSON.stringify(idUsuario));
+				//Adiciona no estado local
+				var usuarioLogado = JSON.parse(localStorage.getItem('idUsuario'));
+				if (usuarioLogado) {
+					setIdUsuario(usuarioLogado.id);
+				}
+
+				return true;
 			}
-			setId(currentUser.id);
-			return { error: 'Usuário ou senha inválido' };
 		}
 	}
 
@@ -43,16 +47,17 @@ function Login() {
 
 	function handleSubmit(event) {
 		event.preventDefault();
-
-		const { token, error } = processarLogin(values);
-		console.log(token, error);
-
-		if (token) {
+		if (processarLogin(values)) {
 			navigate('/Mapa');
+		} else {
+			setError(true);
 		}
 
-		setError(error);
 		setValues(initialState);
+
+		setTimeout(() => {
+			setError(false);
+		}, 5000);
 	}
 
 	return (
@@ -82,12 +87,13 @@ function Login() {
 						</div>
 					</div>
 					<span className='textRegisterLogin'>
-						Ainda não tem registro? <Link to='/Cadastro'> se cadastrar</Link>
+						Ainda não tem registro? <Link to='/Cadastro'> Se cadastre</Link>
 					</span>
 					<div className='btnLogin'>
-						<input className='btnLoginHover' type='submit' />
+						<input className='btnLoginHover' type='submit' value='Logar' />
 					</div>
 				</form>
+				{error && <div className='alert-error'>Usuário inválido</div>}
 			</div>
 		</Layout>
 	);

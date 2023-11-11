@@ -1,19 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useAplication } from '../../../../providers/points';
+import { useLogin } from '../../../../Store/Provider';
 import './styles.css';
-import { FaMap } from 'react-icons/fa6';
-import { FaTrophy } from 'react-icons/fa6';
-import { FaStar } from 'react-icons/fa6';
+import {
+	FaMap,
+	FaTrophy,
+	FaStar,
+	FaArrowRightFromBracket,
+} from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';
 function Header() {
 	const { points, completeQuestions } = useAplication();
+	const { idUsuario, setIdUsuario } = useLogin();
+	const navigate = useNavigate();
+
 	let trophies = 0;
 
 	for (let i = 0; i < completeQuestions.length; i++) {
 		if (completeQuestions[i] == true) {
 			trophies += 1;
 		}
+	}
+
+	function sair() {
+		localStorage.clear();
+		setIdUsuario(0);
+		navigate('/');
 	}
 
 	return (
@@ -37,6 +50,11 @@ function Header() {
 					<FaStar size={30} color='#FFFFFF' />
 					<span className='points'>{points}</span>
 				</div>
+				{idUsuario > 0 && (
+					<div className='icon-4' onClick={sair}>
+						<FaArrowRightFromBracket size={30} color='#FFFFFF' />
+					</div>
+				)}
 			</div>
 		</header>
 	);
