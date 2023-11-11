@@ -16,6 +16,7 @@ function Login() {
 	const navigate = useNavigate();
 
 	function processarLogin({ user, password }) {
+
 		if (alldados.length > 0) {
 			const currentUser = alldados.find(
 				(usuario) => usuario.usuario === user && usuario.senha === password
