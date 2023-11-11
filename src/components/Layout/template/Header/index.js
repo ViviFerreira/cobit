@@ -7,6 +7,7 @@ import {
 	FaTrophy,
 	FaStar,
 	FaArrowRightFromBracket,
+	FaRankingStar
 } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
@@ -38,20 +39,25 @@ function Header() {
 			</Link>
 			<div className='icons'>
 				<div className='icon-1'>
+					<Link to="/Rank">
+						<FaRankingStar size={30} color='#FFFFFF' />
+					</Link>
+				</div>
+				<div className='icon-2'>
 					<Link to='/Mapa'>
 						<FaMap size={30} color='#FFFFFF' />
 					</Link>
 				</div>
-				<div className='icon-2'>
+				<div className='icon-3'>
 					<FaTrophy size={30} color='#FFFFFF' />
 					<span className='points'>{trophies}</span>
 				</div>
-				<div className='icon-3'>
+				<div className='icon-4'>
 					<FaStar size={30} color='#FFFFFF' />
 					<span className='points'>{points}</span>
 				</div>
 				{idUsuario > 0 && (
-					<div className='icon-4' onClick={sair}>
+					<div className='icon-5' onClick={sair}>
 						<FaArrowRightFromBracket size={30} color='#FFFFFF' />
 					</div>
 				)}

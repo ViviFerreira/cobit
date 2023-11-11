@@ -22,7 +22,17 @@ function Rank() {
 
   const renderizarGrafico = (dados) => {
     const nomes = dados.map(usuario => usuario.usuario);
-    const pontos = dados.map(usuario => usuario.pointsQuestions.reduce((acumulador, numero) => acumulador + numero, 0));
+    const pontos = dados.map(usuario => {
+        // Verifica se pointsQuestions existe e é um array
+        const pointsQuestions = usuario.pointsQuestions;
+        if (pointsQuestions && Array.isArray(pointsQuestions)) {
+            // Usa reduce apenas se pointsQuestions é um array
+            return pointsQuestions.reduce((acumulador, numero) => acumulador + numero, 0);
+        } else {
+            // Se pointsQuestions não existe ou não é um array, retorna um valor padrão
+            return 0;
+        }
+    });
 
     var options = {
       series: [{
@@ -82,14 +92,7 @@ function Rank() {
         },
         axisTicks: {
           show: false,
-        },
-        labels: {
-          show: false,
-          formatter: function (val) {
-            return val + "%";
-          }
         }
-      
       },
     };
 
