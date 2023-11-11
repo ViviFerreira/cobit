@@ -1,21 +1,36 @@
-import React from 'react';
-import Context from './Context';
-import useStorage from '../utils/useStorage';
+import { createContext, useState, useContext, useEffect } from 'react';
+import { buscar } from '../api';
 
-const StoreProvider = ({ children }) => {
-  const [token, setToken] = useStorage('token');
+export const LoginContext = createContext({});
 
-  return (
-    <Context.Provider
-      value={{
-        token,
-        setToken,
-      }}
-    >
-      {children}
-    </Context.Provider>
-  )
-}
+export const LoginProvider = ({ children }) => {
+	const [id, setId] = useState();
+	const [alldados, setAllDados] = useState([]);
 
+	useEffect(() => {
+		async function fetchData() {
+			try {
+				const data = await buscar('http://127.0.0.1:3001/points/');
+				setAllDados(data);
+			} catch (error) {
+				console.error(error);
+			}
+		}
+		fetchData();
+	}, []);
 
-export default StoreProvider;
+	return (
+		<LoginContext.Provider
+			value={{
+				id,
+				setId,
+				alldados,
+				setAllDados,
+			}}
+		>
+			{children}
+		</LoginContext.Provider>
+	);
+};
+
+export const useLogin = () => useContext(LoginContext);

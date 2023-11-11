@@ -1,29 +1,26 @@
 {
-  "points": [
-    {
-      "id": 1,
-      "name": "Viviane",
-      "pointsQuestions": [
-        4,
-        3,
-        4,
-        4,
-        4
-      ],
-      "unlockedModules": [
-        true,
-        false,
-        false,
-        false,
-        false
-      ],
-      "completeQuestions": [
-        true,
-        true,
-        true,
-        true,
-        true
-      ]
-    }
-  ]
+	"points": [
+		{
+			"empresa": "unifap",
+			"setor": "Viviane",
+			"usuario": "admin2",
+			"email": "vivianeferreira18@aluno.fapce.edu.br",
+			"senha": "admin",
+			"pointsQuestions": [0, 2, 0, 0, 0],
+			"unlockedModules": [true, true, false, false, false],
+			"completeQuestions": [false, true, false, false, false],
+			"id": 1
+		},
+		{
+			"empresa": "unifap",
+			"setor": "Viviane",
+			"usuario": "admin",
+			"email": "vivianeferreira18@aluno.fapce.edu.br",
+			"senha": "admin",
+			"pointsQuestions": [0, 2, 0, 0, 0],
+			"unlockedModules": [true, true, false, false, false],
+			"completeQuestions": [false, true, false, false, false],
+			"id": 1
+		}
+	]
 }
