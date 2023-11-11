@@ -1,3 +1,37 @@
 {
-	"points": []
+	"points": [
+		{
+			"empresa": "Fap",
+			"setor": "TI",
+			"usuario": "viviane",
+			"email": "vivianeferreira18@aluno.fapce.edu.br",
+			"senha": "123",
+			"pointsQuestions": [0, 0, 0, 0, 0],
+			"unlockedModules": [true, false, false, false, false],
+			"completeQuestions": [false, false, false, false, false],
+			"id": 1
+		},
+		{
+			"empresa": "Fap",
+			"setor": "TI",
+			"usuario": "nalberth",
+			"email": "vivianeferreira18@aluno.fapce.edu.br",
+			"senha": "123",
+			"pointsQuestions": [0, 0, 0, 0, 0],
+			"unlockedModules": [true, false, false, false, false],
+			"completeQuestions": [false, false, false, false, false],
+			"id": 2
+		},
+		{
+			"empresa": "Fap",
+			"setor": "TI",
+			"usuario": "teste",
+			"email": "vivianeferreira18@aluno.fapce.edu.br",
+			"senha": "123",
+			"pointsQuestions": [0, 0, 0, 0, 0],
+			"unlockedModules": [true, false, false, false, false],
+			"completeQuestions": [false, false, false, false, false],
+			"id": 3
+		}
+	]
 }
