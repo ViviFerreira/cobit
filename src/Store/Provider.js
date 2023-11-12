@@ -12,7 +12,7 @@ export const LoginProvider = ({ children }) => {
 	useEffect(() => {
 		async function fetchData() {
 			try {
-				const data = await buscar('http://localhost:3001/points');
+				const data = await buscar('http://127.0.0.1:3001/points');
 				setAllDados(data);
 				setLoading(false);
 			} catch (error) {

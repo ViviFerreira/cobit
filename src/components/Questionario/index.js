@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAplication } from '../../providers/points';
+import { useNavigate } from 'react-router-dom';
 import Layout from '../Layout';
 import Pagination from '../Pagination';
 import TitleModulo from '../TitleModulo';
@@ -24,12 +25,18 @@ function Questionario({ perguntas, up, down, indice }) {
 	const [perguntaAtual, setPerguntaAtual] = useState(0);
 	const [showPontuacao, setShowPontuacao] = useState(false);
 	const [pontosAtuais, setPontosAtuais] = useState(0);
-  
+	const navigate = useNavigate();
+
 	function salvarDados() {
 		let dadosBanco = { ...dados };
 		dadosBanco.completeQuestions[indice] = true;
 		dadosBanco.pointsQuestions[indice] = pontosAtuais + 1;
 		editar(dadosBanco, idUsuario);
+
+		if (indice == 4) {
+			navigate('/Fim');
+		}
+
 		return 0;
 	}
 
@@ -55,7 +62,12 @@ function Questionario({ perguntas, up, down, indice }) {
 	}
 
 	if (loading) {
-		return <div className='backgroundLoading'><div class="loader-circle"></div><p>Carregando...</p></div>
+		return (
+			<div className='backgroundLoading'>
+				<div class='loader-circle'></div>
+				<p>Carregando...</p>
+			</div>
+		);
 	}
 
 	return (
