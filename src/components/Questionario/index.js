@@ -23,7 +23,7 @@ function Questionario({ perguntas, up, down, indice }) {
 	const [pontosAtuais, setPontosAtuais] = useState(0);
 
 	if (loading) {
-		return <div>Carregando...</div>;
+		return <div className='backgroundLoading'><div class="loader-circle"></div><p>Carregando...</p></div>
 	}
 
 	function salvarDados() {

@@ -7,13 +7,18 @@ import './styles.css';
 
 function Modulo1_3() {
 	const fadeInFromTop = {
-		initial: { x: 16 },
-		animate: { x: 32 },
-		exit: {},
+		initial: { y: -100, opacity: 0 },
+		animate: { y: 0, opacity: 1 },
+		exit: { y: 100, opacity: 0 },
 	};
 	return (
 		<Layout>
-			<div className='container'>
+			<motion.div 
+			className='container'
+			initial='initial'
+			animate='animate'
+			exit='exit'
+			variants={fadeInFromTop}>
 				<TitleModulo>
 					<span className='title-destaque'>PRINCÍPIOS</span> do COBIT 2019
 				</TitleModulo>
@@ -33,15 +38,9 @@ function Modulo1_3() {
 						</p>
 					</div>
 				</div>
-				<motion.div
-					class='progress-bar2'
-					initial='initial'
-					animate='animate'
-					exit='exit'
-					variants={fadeInFromTop}
-				></motion.div>
+				<div class='progress-bar2'></div>
 				<Pagination up='/Modulo2_2' down='/Modulo2_4' />
-			</div>
+			</motion.div>
 		</Layout>
 	);
 }

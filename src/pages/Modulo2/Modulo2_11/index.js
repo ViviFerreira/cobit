@@ -2,12 +2,22 @@ import React from 'react';
 import Layout from '../../../components/Layout';
 import TitleModulo from '../../../components/TitleModulo';
 import Pagination from '../../../components/Pagination';
+import { motion } from 'framer-motion';
 import './styles.css';
 
 function Modulo2_2() {
+	const fadeInFromTop = {
+		initial: { y: -100, opacity: 0 },
+		animate: { y: 0, opacity: 1 },
+		exit: { y: 100, opacity: 0 },
+	};
 	return (
 		<Layout>
-			<div className='container'>
+			<motion.div className='container'
+			initial='initial'
+			animate='animate'
+			exit='exit'
+			variants={fadeInFromTop}>
 				<TitleModulo>
 					<span className='title-destaque'>PRINCÍPIOS</span> do COBIT 2019
 				</TitleModulo>
@@ -29,7 +39,7 @@ function Modulo2_2() {
 				</div>
 				<div class='progress-bar9'></div>
 				<Pagination up='/Modulo2_10' down='/Questionario2_1' />
-			</div>
+			</motion.div>
 		</Layout>
 	);
 }
