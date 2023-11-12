@@ -8,7 +8,7 @@ function Modulo2() {
 			number='2'
 			subtitle='Princípios do COBIT 2019'
 			imgMudulo={imgMudulo2}
-			up='/Modulo1'
+			up='/Mapa'
 			down='/Modulo2_1'
 		/>
 	);

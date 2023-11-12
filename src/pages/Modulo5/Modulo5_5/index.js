@@ -29,7 +29,7 @@ function Modulo5_5() {
                     <p>Demonstra a importância dos ativos de TI, visto que agregam valor aos negócios</p>
                 </div>
 			</div>
-			<Pagination up='/Modulo5_1' down='*' />
+			<Pagination up='/Modulo5_1' down='/Modulo5_1' />
 		</Layout>
 	);
 }

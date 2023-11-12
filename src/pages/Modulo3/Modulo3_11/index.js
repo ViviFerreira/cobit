@@ -55,7 +55,7 @@ function Modulo3_11() {
 					</div>
 				</div>
 				<div className='contentModulo3_11'>
-					<div className='baiBackgroundModulo3_11'>
+					<Link to='/Modulo3_8' className='baiBackgroundModulo3_11'>
 						<div className='cardModulo3_8'>
 							<p className='textEdmModulo3_8'>BAI 1</p>
 						</div>
@@ -89,7 +89,7 @@ function Modulo3_11() {
 						<div className='cardModulo3_8'>
 							<p className='textEdmModulo3_8'>BAI 11</p>
 						</div>
-					</div>
+					</Link>
 				</div>
 				<div className='contentCardModulo3_11'>
 					<div className='aling-line-Modulo3_11'>

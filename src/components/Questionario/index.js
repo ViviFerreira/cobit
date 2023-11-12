@@ -24,7 +24,7 @@ function Questionario({ perguntas, up, down, indice }) {
 	const [perguntaAtual, setPerguntaAtual] = useState(0);
 	const [showPontuacao, setShowPontuacao] = useState(false);
 	const [pontosAtuais, setPontosAtuais] = useState(0);
-
+  
 	function salvarDados() {
 		let dadosBanco = { ...dados };
 		dadosBanco.completeQuestions[indice] = true;
@@ -55,7 +55,7 @@ function Questionario({ perguntas, up, down, indice }) {
 	}
 
 	if (loading) {
-		return <div>Carregando...</div>;
+		return <div className='backgroundLoading'><div class="loader-circle"></div><p>Carregando...</p></div>
 	}
 
 	return (

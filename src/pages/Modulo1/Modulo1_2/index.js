@@ -47,7 +47,7 @@ function Modulo1_2() {
 						</p>
 					</div>
 				</div>
-				<motion.div
+				<div
 					className='contentImgCard'
 					initial='initial'
 					animate='animate'
@@ -59,42 +59,42 @@ function Modulo1_2() {
 					</div>
 					<div className='listCardModulo1_2'>
 						<Link to='/Modulo1_3' className='card1Modulo1_2'>
-							<motion.div initial='initial' whileHover='hover' variants={zoomIn}>
+							<div initial='initial' whileHover='hover' variants={zoomIn}>
 								<ul>
 									<li>1. Alinhamento estratégico</li>
 									<li>2. Compliance</li>
 								</ul>
-							</motion.div>
+							</div>
 						</Link>
 						<Link to='/Modulo1_4' className='card2Modulo1_2'>
-							<motion.div initial='initial' whileHover='hover' variants={zoomIn}>
+							<div initial='initial' whileHover='hover' variants={zoomIn}>
 								<ul>
 									<li>1. Decisão</li>
 									<li>2. Compromisso</li>
 									<li>3. Priorização</li>
 									<li>4. Alocação de recursos</li>
 								</ul>
-							</motion.div>
+							</div>
 						</Link>
 						<Link to='/Modulo1_5' className='card3Modulo1_2'>
-							<motion.div initial='initial' whileHover='hover' variants={zoomIn}>
+							<div initial='initial' whileHover='hover' variants={zoomIn}>
 								<ul>
 									<li>1. Estrutura</li>
 									<li>2. Processos</li>
 									<li>3. Operação</li>
 									<li>4. Gestão</li>
 								</ul>
-							</motion.div>
+							</div>
 						</Link>
 						<Link to='/Modulo1_6' className='card4Modulo1_2'>
-							<motion.div initial='initial' whileHover='hover' variants={zoomIn}>
+							<div initial='initial' whileHover='hover' variants={zoomIn}>
 								<ul>
 									<li>1. Medição do valor e do desempenho</li>
 								</ul>
-							</motion.div>
+							</div>
 						</Link>
 					</div>
-				</motion.div>
+				</div>
 			</motion.div>
 			<Pagination up='/Modulo1_1' down='/Modulo1_7' />
 		</Layout>
