@@ -5,7 +5,8 @@ import Pagination from '../Pagination';
 import TitleModulo from '../TitleModulo';
 import { FaStar } from 'react-icons/fa6';
 import './styles.css';
-import { buscar, editar } from '../../api';
+import { editar } from '../../api';
+import { useLogin } from '../../Store/Provider';
 
 function Questionario({ perguntas, up, down, indice }) {
 	const {
@@ -17,27 +18,24 @@ function Questionario({ perguntas, up, down, indice }) {
 		loading,
 	} = useAplication();
 
+	const { idUsuario } = useLogin();
+
 	const questions = perguntas ?? [];
 	const [perguntaAtual, setPerguntaAtual] = useState(0);
 	const [showPontuacao, setShowPontuacao] = useState(false);
 	const [pontosAtuais, setPontosAtuais] = useState(0);
 
-	if (loading) {
-		return <div>Carregando...</div>;
-	}
-
 	function salvarDados() {
 		let dadosBanco = { ...dados };
-		dadosBanco.pointsQuestions[indice] = pontosAtuais + 1;
 		dadosBanco.completeQuestions[indice] = true;
-		editar(dadosBanco, 1);
+		dadosBanco.pointsQuestions[indice] = pontosAtuais + 1;
+		editar(dadosBanco, idUsuario);
 		return 0;
 	}
 
 	function proximaPergunta(correta) {
 		if (!completeQuestions[indice]) {
 			const nextQuestion = perguntaAtual + 1;
-
 			if (correta) {
 				setPontosAtuais(pontosAtuais + 1);
 				setPoints(points + 1);
@@ -46,6 +44,7 @@ function Questionario({ perguntas, up, down, indice }) {
 				setPerguntaAtual(nextQuestion);
 			} else {
 				setPontosAtuais(pontosAtuais + 1);
+				setPoints(points + 1);
 				let arrayQuestions = completeQuestions;
 				arrayQuestions[indice] = true;
 				setCompleteQuestions(arrayQuestions);
@@ -53,6 +52,10 @@ function Questionario({ perguntas, up, down, indice }) {
 				salvarDados();
 			}
 		}
+	}
+
+	if (loading) {
+		return <div>Carregando...</div>;
 	}
 
 	return (

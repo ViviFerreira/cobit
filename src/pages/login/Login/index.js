@@ -47,7 +47,7 @@ function Login() {
 	function handleSubmit(event) {
 		event.preventDefault();
 		if (processarLogin(values)) {
-			navigate('/Mapa');
+			navigate('/Home');
 		} else {
 			setError(true);
 		}
