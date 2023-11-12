@@ -58,7 +58,6 @@ function Login() {
 			setError(false);
 		}, 5000);
 	}
-
 	return (
 		<Layout>
 			<div className='contentLogin'>
