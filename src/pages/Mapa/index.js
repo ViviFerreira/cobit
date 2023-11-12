@@ -19,7 +19,6 @@ import { motion } from 'framer-motion';
 function Mapa() {
 	const { completeQuestions, modulosDesbloqueados, setModulosDesbloqueados } =
 		useAplication();
-	const { idUsuario } = useLogin();
 	const navigate = useNavigate();
 
 	const slideInFromRight = {
@@ -45,7 +44,8 @@ function Mapa() {
 	}, [completeQuestions]);
 
 	useEffect(() => {
-		if (idUsuario == 0) {
+		var usuarioLogado = JSON.parse(localStorage.getItem('idUsuario'));
+		if (!usuarioLogado) {
 			navigate('/');
 		}
 	}, []);

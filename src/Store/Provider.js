@@ -7,18 +7,20 @@ export const LoginProvider = ({ children }) => {
 	const [alldados, setAllDados] = useState([]);
 	const [idUsuario, setIdUsuario] = useState(0);
 	const [novaBusca, setNovaBusca] = useState(false);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		async function fetchData() {
 			try {
 				const data = await buscar('http://localhost:3001/points');
 				setAllDados(data);
+				setLoading(false);
 			} catch (error) {
 				console.error(error);
 			}
 		}
 		fetchData();
-	}, [novaBusca]);
+	}, [novaBusca, setNovaBusca]);
 
 	return (
 		<LoginContext.Provider
@@ -28,6 +30,7 @@ export const LoginProvider = ({ children }) => {
 				idUsuario,
 				setIdUsuario,
 				setNovaBusca,
+				loading,
 			}}
 		>
 			{children}
