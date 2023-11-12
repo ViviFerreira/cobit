@@ -11,7 +11,7 @@ export const LoginProvider = ({ children }) => {
 	useEffect(() => {
 		async function fetchData() {
 			try {
-				const data = await buscar('https://json-server-gamma-nine.vercel.app/points/');
+				const data = await buscar('https://json-server-gamma-nine.vercel.app/points');
 				setAllDados(data);
 			} catch (error) {
 				console.error(error);
