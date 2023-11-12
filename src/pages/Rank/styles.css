@@ -1,0 +1,15 @@
+#chart{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.tilteRank{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 2rem;
+	font-weight: 400;
+
+}
