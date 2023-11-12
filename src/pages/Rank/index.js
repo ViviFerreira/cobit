@@ -39,7 +39,7 @@ function Rank() {
 			],
 			chart: {
 				width: '100%',
-				height: '75%',
+				height: '70%',
 				type: 'bar',
 			},
 			plotOptions: {
@@ -55,7 +55,7 @@ function Rank() {
 				offsetY: -20,
 				style: {
 					fontSize: '12px',
-					colors: ['#304758'],
+					colors: ['#142d64'],
 				},
 			},
 
@@ -72,8 +72,8 @@ function Rank() {
 					fill: {
 						type: 'gradient',
 						gradient: {
-							colorFrom: '#D8E3F0',
-							colorTo: '#BED1E6',
+							colorFrom: '#142d64',
+							colorTo: '#142d64',
 							stops: [0, 100],
 							opacityFrom: 0.4,
 							opacityTo: 0.5,
@@ -101,9 +101,13 @@ function Rank() {
 	};
 
 	if (loading) {
-		return <div>Carregando...</div>;
+		return (
+			<div className='backgroundLoading'>
+				<div class='loader-circle'></div>
+				<p>Carregando...</p>
+			</div>
+		);
 	}
-
 	return (
 		<Layout>
 			<h1 className='tilteRank'>Ranking de acertos dos questionários</h1>

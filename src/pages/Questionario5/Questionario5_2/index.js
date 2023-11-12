@@ -4,7 +4,7 @@ import { quiz5 } from '../../../data/quiz5';
 
 function Questionario5_2() {
 	return (
-		<Questionario perguntas={quiz5} up='/modulo5_2' down='/Mapa' indice='4' />
+		<Questionario perguntas={quiz5} up='/modulo5_2' down='/Fim' indice='4' />
 	);
 }
 export default Questionario5_2;

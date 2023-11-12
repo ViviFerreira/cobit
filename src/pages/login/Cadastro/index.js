@@ -23,7 +23,12 @@ function Cadastro() {
 		useState(false);
 
 	if (loading) {
-		return <div>Carregando...</div>;
+		return (
+			<div className='backgroundLoading'>
+				<div class='loader-circle'></div>
+				<p>Carregando...</p>
+			</div>
+		);
 	}
 
 	const handleChange = (e) => {
