@@ -31,13 +31,13 @@ function Modulo3_3() {
 						</Link>
 					</div>
 					<div class='card-group'>
-						<Link to="Modulo3_5">
+						<Link to="/Modulo3_5">
 							<div class='card4Modulo3_2 active'>DSS</div>
 							<div class='line-card line-active'></div>
 						</Link>
 					</div>
 					<div class='card-group'>
-						<Link to="Modulo3_6">
+						<Link to="/Modulo3_6">
 							<div class='card5Modulo3_2 active'>MEA</div>
 							<div class='line-card line-active'></div>
 						</Link>
