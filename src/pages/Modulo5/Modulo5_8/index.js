@@ -16,7 +16,7 @@ function Modulo5_8() {
                     <p>Há vários pontos positivos ao se decidir usar o COBIT 2019 como framework de governança:</p>
                 </div>
                 <div className='contentCardModulo5_8'>
-                    <Link to="/Modulo5_8" className='iconTextMoule5_8'>
+                    <Link to="/Modulo5_1" className='iconTextMoule5_8'>
                         <div className='backgrounCardModulo5_8'>
                             <FaCheckCircle size={30} color='#fff'/>
                         </div> 

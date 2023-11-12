@@ -153,10 +153,10 @@ function Modulo3_8() {
 								<p className='textEdmModulo3_8'>MEA 3</p>
 							</div>
 							<div className='cardMeaModulo3_8'>
-								<p className='textEdmModulo3_8'>MEA </p>
+								<p className='textEdmModulo3_8'>MEA 4</p>
 							</div>
 							<div className='cardMeaModulo3_8'>
-								<p className='textEdmModulo3_8'>MEA 1</p>
+								<p className='textEdmModulo3_8'>MEA 5</p>
 							</div>
 						</Link>
 					</div>

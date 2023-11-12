@@ -34,7 +34,7 @@ function Modulo3_13() {
 							<div className='cardMeaModulo3_13'>
 								<p className='textEdmModulo3_13'>MEA 3</p>
 							</div>
-							<div className='cardMeaModulo3_13'>np
+							<div className='cardMeaModulo3_13'>
 								<p className='textEdmModulo3_13'>MEA 4</p>
 							</div>
 						</Link>

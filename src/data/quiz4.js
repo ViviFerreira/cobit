@@ -40,7 +40,7 @@ export const quiz4 = [
 			},
 			{
 				resposta:
-					'Oferecer uma visão visual dos processos, atividades e interações no COBIT.',
+					'Oferecer uma visão dos processos, atividades e interações no COBIT.',
 				correta: true,
 			},
 			{
