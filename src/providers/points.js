@@ -32,7 +32,7 @@ export const PointsProvider = (props) => {
 		async function fetchData() {
 			try {
 				if (idUsuario > 0) {
-					const data = await buscar(`https://server-js-theta.vercel.app/points/${idUsuario}`);
+					const data = await buscar(`http://localhost:3001/points/${idUsuario}`);
 					setDados(data);
 					setModulosDesbloqueados(data.unlockedModules);
 					setCompleteQuestions(data.completeQuestions);

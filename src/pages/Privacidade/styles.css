@@ -1,25 +1,27 @@
 .row{
     display: flex;
     margin: 10px;
+    max-height: 500px;
+    overflow: auto;
 }
 
 .column1 {
     float: left;
     width: 49%;
     height: 100%;
-    padding: 10px;
+    padding: 5px;
 }
 
 .column2{
     border-left: 1px double  ;
-    width: 0.1%;
+    height: 58rem;
 }
 
 .column3{
     float: left;
     width: 49%;
     height: 100%;
-    padding: 10px;
+    padding: 5px;
 }
    
 .row:after {
@@ -31,18 +33,19 @@
 .politicaPrivacidade{
     display: flex;
     justify-content: center;
-    margin: 10px auto;
+    margin: 5px auto;
 }
 
 .TitlePrivacidade{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-weight: bold;
     text-decoration: underline;
 }
 
 .textContentPrivadidade{
- margin-bottom: 10px;
+ margin-bottom: 5px;
  text-align: justify;
+
 }
 
 .listInfoColetadas{

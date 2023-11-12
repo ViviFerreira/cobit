@@ -37,7 +37,7 @@ function Modulo5_9() {
 					</p>
 				</div>
 			</div>
-			<Pagination up='/Modulo5_8' down='/Questionario5_1' />
+			<Pagination up='/Modulo5_1' down='/Modulo5_1' />
 		</Layout>
 	);
 }

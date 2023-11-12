@@ -87,3 +87,36 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.backgroundLoading{
+	background-color: #7a8092;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 40rem;
+}
+
+.backgroundLoading p{
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.loader-circle {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 10px solid #fff;
+	border-top-color: #142d64;
+	animation: loader-circle 1s linear infinite;
+  }
+  
+  @keyframes loader-circle {
+	0% {
+	  transform: rotate(0);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
