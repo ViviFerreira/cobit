@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const api = axios.create({
-	baseURL: 'https://json-server-gamma-nine.vercel.app/points/',
+	baseURL: 'https://json-server-gamma-nine.vercel.app/points',
 });
 
 export const cadastrar = async (values) => {
