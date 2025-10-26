@@ -34,7 +34,7 @@ O projeto foi desenvolvido utilizando **React**, uma biblioteca JavaScript para 
 
 #### Tabela de Objetivos do COBIT 2019
 ![Imagem da tela de Objetivos](src/assets/img/objetivos.png)
-![Imagem da tela de Objetivos](src/assets/img/objetivos.png)
+![Imagem da tela de Objetivos](src/assets/img/objetivos1.png)
 
 #### Questionário
 ![Imagem da tela de Questionário](src/assets/img/questionario.png)
